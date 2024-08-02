@@ -62,6 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     let currentSelectedItem = null;
+    let currentModel = null;
+    let originalModelName = null;
 
     fetch('./data/models.json')
         .then(response => response.json())
@@ -71,7 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const modelItems = models.map(model => ({
                 element: createListItem(model.name, model.url),
-                originalName: model.name
+                originalName: model.name,
+                newName: model.name // Inicialmente el nuevo nombre es igual al original
             }));
 
             fetch('./data/PathNames.json')
@@ -83,12 +86,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         modelItems.forEach(item => {
                             if (item.originalName.includes(devName)) {
-                                item.element.textContent = item.originalName.replace(devName, pathName);
+                                item.newName = item.originalName.replace(devName, pathName);
+                                item.element.textContent = item.newName;
                             }
                         });
                     });
 
-                    modelItems.sort((a, b) => a.element.textContent.localeCompare(b.element.textContent));
+                    // Ordenar los elementos por el nuevo nombre
+                    modelItems.sort((a, b) => a.newName.localeCompare(b.newName));
+
+                    // Añadir los elementos ordenados al DOM
                     modelItems.forEach(item => modelList.appendChild(item.element));
                 })
                 .catch(error => console.error('Error fetching name mappings:', error));
@@ -105,6 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             listItem.classList.add('active');
             currentSelectedItem = listItem;
+            currentModel = listItem.textContent; // Store the current model name
+            originalModelName = name; // Store the original model name
             loadModel(url);
         });
         return listItem;
@@ -138,7 +147,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     spineModel = new PIXI.spine.Spine(spineData);
                     resizeModel(spineModel);
                     app.stage.addChild(spineModel);
-                    spineModel.state.setAnimation(0, 'Idle_01', loopAnimation);
+
+                    if (originalModelName.endsWith('_home') || currentModel.endsWith('_home')) {
+                        spineModel.state.setAnimation(0, 'Start_Idle_01', false);
+                        spineModel.state.addListener({
+                            complete: (track) => {
+                                if (track.animation.name === 'Start_Idle_01') {
+                                    spineModel.state.setAnimation(0, 'Idle_01', true);
+                                }
+                            }
+                        });
+                    } else {
+                        spineModel.state.setAnimation(0, 'Idle_01', loopAnimation);
+                    }
 
                     spineModel.interactive = true;
                     spineModel.buttonMode = true;
@@ -203,10 +224,52 @@ document.addEventListener('DOMContentLoaded', () => {
         animationButtonsContainer.innerHTML = '';
         animations.forEach(animation => {
             const button = document.createElement('button');
+            const animationId = `animation_${animation.name.replace(/\s+/g, '_')}`;
+            button.id = animationId;
             button.classList.add('btn', 'btn-primary', 'm-1');
             button.textContent = animation.name;
             button.addEventListener('click', () => {
-                spineModel.state.setAnimation(0, animation.name, loopAnimation);
+                const isLooping = document.getElementById('loopCheckbox').checked;
+                spineModel.state.setAnimation(0, animation.name, isLooping);
+
+                // Si el botón de animación contiene 'Talk_01_A'
+                if (animationId.includes('Talk_01_A')) {
+                    const modelName = originalModelName.split('_')[0]; // Obtener el nombre del modelo
+                    const firstAudio = new Audio(`./audio/${modelName}_MemorialLobby_1_1.ogg`);
+                    const secondAudio = new Audio(`./audio/${modelName}_MemorialLobby_1_2.ogg`);
+
+                    firstAudio.play();
+
+                    firstAudio.addEventListener('ended', () => {
+                        setTimeout(() => {
+                            secondAudio.play();
+                        }, 1000); // 1000 ms = 1 segundo
+                    });
+                } else if (animationId.includes('Talk_02_A')) {
+                    const modelName = originalModelName.split('_')[0]; // Obtener el nombre del modelo
+                    const firstAudio = new Audio(`./audio/${modelName}_MemorialLobby_2_1.ogg`);
+                    const secondAudio = new Audio(`./audio/${modelName}_MemorialLobby_2_2.ogg`);
+
+                    firstAudio.play();
+
+                    firstAudio.addEventListener('ended', () => {
+                        setTimeout(() => {
+                            secondAudio.play();
+                        }, 1000); // 1000 ms = 1 segundo
+                    });
+                } else if (animationId.includes('Talk_03_A')) {
+                    const modelName = originalModelName.split('_')[0]; // Obtener el nombre del modelo
+                    const firstAudio = new Audio(`./audio/${modelName}_MemorialLobby_3_1.ogg`);
+                    const secondAudio = new Audio(`./audio/${modelName}_MemorialLobby_3_2.ogg`);
+
+                    firstAudio.play();
+
+                    firstAudio.addEventListener('ended', () => {
+                        setTimeout(() => {
+                            secondAudio.play();
+                        }, 1000); // 1000 ms = 1 segundo
+                    });
+                }
             });
             animationButtonsContainer.appendChild(button);
         });

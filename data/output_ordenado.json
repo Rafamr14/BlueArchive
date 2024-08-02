@@ -1,0 +1,798 @@
+[
+    {
+        "DevName": "Airi",
+        "PathName": "Airi",
+        "Audio": "Airi"
+    },
+    {
+        "DevName": "Akane",
+        "PathName": "Akane",
+        "Audio": "Akane"
+    },
+    {
+        "DevName": "Akari",
+        "PathName": "Akari",
+        "Audio": "Akari"
+    },
+    {
+        "DevName": "Ako",
+        "PathName": "Ako",
+        "Audio": "Ako"
+    },
+    {
+        "DevName": "Aris",
+        "PathName": "Aris",
+        "Audio": "Aris"
+    },
+    {
+        "DevName": "Aru",
+        "PathName": "Aru",
+        "Audio": "Aru"
+    },
+    {
+        "DevName": "Aru_Newyear",
+        "PathName": "Aru_NewYear",
+        "Audio": "AurNewyear"
+    },
+    {
+        "DevName": "Asuna",
+        "PathName": "Asuna",
+        "Audio": "Asuna"
+    },
+    {
+        "DevName": "Atsuko",
+        "PathName": "Atsuko",
+        "Audio": "Atsuko"
+    },
+    {
+        "DevName": "Ayane",
+        "PathName": "Ayane",
+        "Audio": "Ayane"
+    },
+    {
+        "DevName": "Azusa",
+        "PathName": "Azusa",
+        "Audio": "Azusa"
+    },
+    {
+        "DevName": "Azusa_Swimsuit",
+        "PathName": "Azusa_Swimsuit",
+        "Audio": "AzusaSwimsuit"
+    },
+    {
+        "DevName": "CH0058",
+        "PathName": "Hifumi_Swimsuit"
+    },
+    {
+        "DevName": "CH0060",
+        "PathName": "Tsurugi_Swimsuit"
+    },
+    {
+        "DevName": "CH0063",
+        "PathName": "Hina_Swimsuit"
+    },
+    {
+        "DevName": "CH0064",
+        "PathName": "Iori_Swimsuit"
+    },
+    {
+        "DevName": "CH0066",
+        "PathName": "Shun_Small"
+    },
+    {
+        "DevName": "CH0069",
+        "PathName": "Mika"
+    },
+    {
+        "DevName": "CH0071",
+        "PathName": "Ichika"
+    },
+    {
+        "DevName": "CH0077",
+        "PathName": "Ibuki"
+    },
+    {
+        "DevName": "CH0079",
+        "PathName": "Makoto"
+    },
+    {
+        "DevName": "CH0081",
+        "PathName": "Sena"
+    },
+    {
+        "DevName": "CH0086",
+        "PathName": "Kayoko_NewYear"
+    },
+    {
+        "DevName": "CH0087",
+        "PathName": "Haruka_NewYear"
+    },
+    {
+        "DevName": "CH0088",
+        "PathName": "Megu"
+    },
+    {
+        "DevName": "CH0089",
+        "PathName": "Kasumi"
+    },
+    {
+        "DevName": "CH0092",
+        "PathName": "Nonomi_Swimsuit"
+    },
+    {
+        "DevName": "CH0095",
+        "PathName": "Noa"
+    },
+    {
+        "DevName": "CH0098",
+        "PathName": "Asuna_Bunny"
+    },
+    {
+        "DevName": "CH0099",
+        "PathName": "Akane_Bunny"
+    },
+    {
+        "DevName": "CH0100",
+        "PathName": "Karin_Bunny"
+    },
+    {
+        "DevName": "CH0101",
+        "PathName": "Neru_Bunny"
+    },
+    {
+        "DevName": "CH0107",
+        "PathName": "Kaho"
+    },
+    {
+        "DevName": "CH0110",
+        "PathName": "Umika"
+    },
+    {
+        "DevName": "CH0113",
+        "PathName": "Michiru"
+    },
+    {
+        "DevName": "CH0114",
+        "PathName": "Tsukuyo"
+    },
+    {
+        "DevName": "CH0123",
+        "PathName": "Shigure_HotSpring"
+    },
+    {
+        "DevName": "CH0124",
+        "PathName": "Meru"
+    },
+    {
+        "DevName": "CH0135",
+        "PathName": "Rumi"
+    },
+    {
+        "DevName": "CH0137",
+        "PathName": "Kokona"
+    },
+    {
+        "DevName": "CH0138",
+        "PathName": "Mina"
+    },
+    {
+        "DevName": "CH0141",
+        "PathName": "Fubuki"
+    },
+    {
+        "DevName": "CH0144",
+        "PathName": "Saki"
+    },
+    {
+        "DevName": "CH0145",
+        "PathName": "Miyu"
+    },
+    {
+        "DevName": "CH0152",
+        "PathName": "Mine"
+    },
+    {
+        "DevName": "CH0155",
+        "PathName": "Natsu"
+    },
+    {
+        "DevName": "CH0156",
+        "PathName": "Iroha"
+    },
+    {
+        "DevName": "CH0159",
+        "PathName": "Himari"
+    },
+    {
+        "DevName": "CH0160",
+        "PathName": "Chihiro"
+    },
+    {
+        "DevName": "CH0161",
+        "PathName": "Yukari"
+    },
+    {
+        "DevName": "CH0163",
+        "PathName": "Chinatsu_HotSpring"
+    },
+    {
+        "DevName": "CH0164",
+        "PathName": "Cherino_HotSpring"
+    },
+    {
+        "DevName": "CH0165",
+        "PathName": "Nodoka_HotSpring"
+    },
+    {
+        "DevName": "CH0167",
+        "PathName": "Reisa"
+    },
+    {
+        "DevName": "CH0169",
+        "PathName": "Ui"
+    },
+    {
+        "DevName": "CH0170",
+        "PathName": "Kanna"
+    },
+    {
+        "DevName": "CH0175",
+        "PathName": "Wakamo_Swimsuit"
+    },
+    {
+        "DevName": "CH0176",
+        "PathName": "Ayane_Swimsuit"
+    },
+    {
+        "DevName": "CH0177",
+        "PathName": "Fuuka_NewYear"
+    },
+    {
+        "DevName": "CH0178",
+        "PathName": "Chise_Swimsuit"
+    },
+    {
+        "DevName": "CH0179",
+        "PathName": "Izuna_Swimsuit"
+    },
+    {
+        "DevName": "CH0180",
+        "PathName": "Shizuko_Swimsuit"
+    },
+    {
+        "DevName": "CH0181",
+        "PathName": "Hibiki_Cheerleader"
+    },
+    {
+        "DevName": "CH0182",
+        "PathName": "Utaha_Cheerleader"
+    },
+    {
+        "DevName": "CH0183",
+        "PathName": "Mimori_Swimsuit"
+    },
+    {
+        "DevName": "CH0184",
+        "PathName": "Yuuka_Track"
+    },
+    {
+        "DevName": "CH0185",
+        "PathName": "Kotori_Cheerleader"
+    },
+    {
+        "DevName": "CH0186",
+        "PathName": "Mari_Track"
+    },
+    {
+        "DevName": "CH0187",
+        "PathName": "Toki"
+    },
+    {
+        "DevName": "CH0188",
+        "PathName": "Shiroko_Swimsuit"
+    },
+    {
+        "DevName": "CH0189",
+        "PathName": "Serika_Swimsuit"
+    },
+    {
+        "DevName": "CH0190",
+        "PathName": "Hasumi_Track"
+    },
+    {
+        "DevName": "CH0191",
+        "PathName": "Haruna_NewYear"
+    },
+    {
+        "DevName": "CH0192",
+        "PathName": "Junko_NewYear"
+    },
+    {
+        "DevName": "CH0193",
+        "PathName": "Haruna_Track"
+    },
+    {
+        "DevName": "CH0194",
+        "PathName": "Serina_Christmas"
+    },
+    {
+        "DevName": "CH0195",
+        "PathName": "Hanae_Christmas"
+    },
+    {
+        "DevName": "CH0196",
+        "PathName": "Akari_NewYear"
+    },
+    {
+        "DevName": "CH0198",
+        "PathName": "Koyuki"
+    },
+    {
+        "DevName": "CH0200",
+        "PathName": "Aris_Maid"
+    },
+    {
+        "DevName": "CH0201",
+        "PathName": "Momoi_Maid"
+    },
+    {
+        "DevName": "CH0202",
+        "PathName": "Midori_Maid"
+    },
+    {
+        "DevName": "CH0203",
+        "PathName": "Yuzu_Maid"
+    },
+    {
+        "DevName": "CH0204",
+        "PathName": "Ui_Swimsuit"
+    },
+    {
+        "DevName": "CH0205",
+        "PathName": "Koharu_Swimsuit"
+    },
+    {
+        "DevName": "CH0209",
+        "PathName": "Hanako_Swimsuit"
+    },
+    {
+        "DevName": "CH0210",
+        "PathName": "Hinata_Swimsuit"
+    },
+    {
+        "DevName": "CH0211",
+        "PathName": "Toki_Bunny"
+    },
+    {
+        "DevName": "CH0214",
+        "PathName": "Minori"
+    },
+    {
+        "DevName": "CH0215",
+        "PathName": "Miyako_Swimsuit"
+    },
+    {
+        "DevName": "CH0216",
+        "PathName": "Moe_Swimsuit"
+    },
+    {
+        "DevName": "CH0217",
+        "PathName": "Saki_Swimsuit"
+    },
+    {
+        "DevName": "CH0218",
+        "PathName": "Miyu_Swimsuit"
+    },
+    {
+        "DevName": "CH0219",
+        "PathName": "Eimi_Swimsuit"
+    },
+    {
+        "DevName": "CH0220",
+        "PathName": "Yoshimi_Band"
+    },
+    {
+        "DevName": "CH0224",
+        "PathName": "Renge"
+    },
+    {
+        "DevName": "CH0225",
+        "PathName": "Kikyou"
+    },
+    {
+        "DevName": "CH0230",
+        "PathName": "Hina_Dress"
+    },
+    {
+        "DevName": "CH0231",
+        "PathName": "Ako_Dress"
+    },
+    {
+        "DevName": "CH0232",
+        "PathName": "Kotama_Camp"
+    },
+    {
+        "DevName": "CH0233",
+        "PathName": "Hare_Camp"
+    },
+    {
+        "DevName": "CH0239",
+        "PathName": "Kayoko_Dress"
+    },
+    {
+        "DevName": "CH0240",
+        "PathName": "Aru_Dress"
+    },
+    {
+        "DevName": "CH0250",
+        "PathName": "Kazusa_Band"
+    },
+    {
+        "DevName": "CH0251",
+        "PathName": "Airi_Band"
+    },
+    {
+        "DevName": "CH0255",
+        "PathName": "Tsubaki_Guide"
+    },
+    {
+        "DevName": "CH0258_01",
+        "PathName": "Hoshino_Battle_Dealer"
+    },
+    {
+        "DevName": "CH0258_02",
+        "PathName": "Hoshino_Battle_Tank"
+    },
+    {
+        "DevName": "CH0260",
+        "PathName": "Kanna_Swimsuit"
+    },
+    {
+        "DevName": "CH0261",
+        "PathName": "Fubuki_Swimsuit"
+    },
+    {
+        "DevName": "CH0262",
+        "PathName": "Kirino_Swimsuit"
+    },
+    {
+        "DevName": "CH0263",
+        "PathName": "Shiroko_Terror"
+    },
+    {
+        "DevName": "CH0266",
+        "PathName": "Saori_Swimsuit"
+    },
+    {
+        "DevName": "CH0267",
+        "PathName": "Atsuko_Swimsuit"
+    },
+    {
+        "DevName": "CH0269",
+        "PathName": "Hiyori_Swimsuit"
+    },
+    {
+        "DevName": "CH9996",
+        "PathName": "Saten_Ruiko"
+    },
+    {
+        "DevName": "CH9997",
+        "PathName": "Shokuhou_Misaki"
+    },
+    {
+        "DevName": "CH9998",
+        "PathName": "Misaka_Mikoto"
+    },
+    {
+        "DevName": "CH9999",
+        "PathName": "Hatsune_Miku"
+    },
+    {
+        "DevName": "Cherino",
+        "PathName": "Cherino"
+    },
+    {
+        "DevName": "Chinatsu",
+        "PathName": "Chinatsu"
+    },
+    {
+        "DevName": "Chise",
+        "PathName": "Chise"
+    },
+    {
+        "DevName": "Eimi",
+        "PathName": "Eimi"
+    },
+    {
+        "DevName": "Fuuka",
+        "PathName": "Fuuka"
+    },
+    {
+        "DevName": "Hanae",
+        "PathName": "Hanae"
+    },
+    {
+        "DevName": "Hanako",
+        "PathName": "Hanako"
+    },
+    {
+        "DevName": "Hare",
+        "PathName": "Hare"
+    },
+    {
+        "DevName": "Haruka",
+        "PathName": "Haruka"
+    },
+    {
+        "DevName": "Haruna",
+        "PathName": "Haruna"
+    },
+    {
+        "DevName": "Hasumi",
+        "PathName": "Hasumi"
+    },
+    {
+        "DevName": "Hibiki",
+        "PathName": "Hibiki"
+    },
+    {
+        "DevName": "Hihumi",
+        "PathName": "Hifumi"
+    },
+    {
+        "DevName": "Hihumi_Swimsuit",
+        "PathName": "Hifumi_Swimsuit"
+    },
+    {
+        "DevName": "Hina",
+        "PathName": "Hina"
+    },
+    {
+        "DevName": "Hinata",
+        "PathName": "Hinata"
+    },
+    {
+        "DevName": "Hiyori",
+        "PathName": "Hiyori"
+    },
+    {
+        "DevName": "Hoshino",
+        "PathName": "Hoshino"
+    },
+    {
+        "DevName": "Hoshino_Swimsuit",
+        "PathName": "Hoshino_Swimsuit"
+    },
+    {
+        "DevName": "Iori",
+        "PathName": "Iori"
+    },
+    {
+        "DevName": "Izumi",
+        "PathName": "Izumi"
+    },
+    {
+        "DevName": "Izumi_swimsuit",
+        "PathName": "Izumi_Swimsuit"
+    },
+    {
+        "DevName": "Izuna",
+        "PathName": "Izuna"
+    },
+    {
+        "DevName": "Juri",
+        "PathName": "Juri"
+    },
+    {
+        "DevName": "Kaede",
+        "PathName": "Kaede"
+    },
+    {
+        "DevName": "karin",
+        "PathName": "Karin"
+    },
+    {
+        "DevName": "Kayoko",
+        "PathName": "Kayoko"
+    },
+    {
+        "DevName": "Kazusa",
+        "PathName": "Kazusa"
+    },
+    {
+        "DevName": "kirara",
+        "PathName": "Kirara"
+    },
+    {
+        "DevName": "Kirino",
+        "PathName": "Kirino"
+    },
+    {
+        "DevName": "Koharu",
+        "PathName": "Koharu"
+    },
+    {
+        "DevName": "Kotama",
+        "PathName": "Kotama"
+    },
+    {
+        "DevName": "Kotori",
+        "PathName": "Kotori"
+    },
+    {
+        "DevName": "Maki",
+        "PathName": "Maki"
+    },
+    {
+        "DevName": "Mari",
+        "PathName": "Mari"
+    },
+    {
+        "DevName": "Marina",
+        "PathName": "Marina"
+    },
+    {
+        "DevName": "Mashiro",
+        "PathName": "Mashiro"
+    },
+    {
+        "DevName": "Mashiro_Swimsuit",
+        "PathName": "Mashiro_Swimsuit"
+    },
+    {
+        "DevName": "Midori",
+        "PathName": "Midori"
+    },
+    {
+        "DevName": "Mimori",
+        "PathName": "Mimori"
+    },
+    {
+        "DevName": "Misaki",
+        "PathName": "Misaki"
+    },
+    {
+        "DevName": "miyako",
+        "PathName": "Miyako"
+    },
+    {
+        "DevName": "Moe",
+        "PathName": "Moe"
+    },
+    {
+        "DevName": "Momiji",
+        "PathName": "Momiji"
+    },
+    {
+        "DevName": "Momoi",
+        "PathName": "Momoi"
+    },
+    {
+        "DevName": "Mutsuki",
+        "PathName": "Mutsuki"
+    },
+    {
+        "DevName": "Mutsuki_Newyear",
+        "PathName": "Mutsuki_NewYear"
+    },
+    {
+        "DevName": "Nagisa",
+        "PathName": "Nagisa"
+    },
+    {
+        "DevName": "Neru",
+        "PathName": "Neru"
+    },
+    {
+        "DevName": "Nodoka",
+        "PathName": "Nodoka"
+    },
+    {
+        "DevName": "Nonomi",
+        "PathName": "Nonomi"
+    },
+    {
+        "DevName": "Pina",
+        "PathName": "Pina"
+    },
+    {
+        "DevName": "Sakurako",
+        "PathName": "Sakurako"
+    },
+    {
+        "DevName": "Saori",
+        "PathName": "Saori"
+    },
+    {
+        "DevName": "Saya",
+        "PathName": "Saya"
+    },
+    {
+        "DevName": "Saya_Casual",
+        "PathName": "Saya_Casual"
+    },
+    {
+        "DevName": "Serika",
+        "PathName": "Serika"
+    },
+    {
+        "DevName": "Serika_Newyear",
+        "PathName": "Serika_NewYear"
+    },
+    {
+        "DevName": "Serina",
+        "PathName": "Serina"
+    },
+    {
+        "DevName": "Shigure",
+        "PathName": "Shigure"
+    },
+    {
+        "DevName": "Shimiko",
+        "PathName": "Shimiko"
+    },
+    {
+        "DevName": "Shiroko",
+        "PathName": "Shiroko"
+    },
+    {
+        "DevName": "Shiroko_RidingSuit",
+        "PathName": "Shiroko_Cycling"
+    },
+    {
+        "DevName": "Shizuko",
+        "PathName": "Shizuko"
+    },
+    {
+        "DevName": "Shun",
+        "PathName": "Shun"
+    },
+    {
+        "DevName": "Sumire",
+        "PathName": "Sumire"
+    },
+    {
+        "DevName": "Suzumi",
+        "PathName": "Suzumi"
+    },
+    {
+        "DevName": "Tomoe",
+        "PathName": "Tomoe"
+    },
+    {
+        "DevName": "Tsubaki",
+        "PathName": "Tsubaki"
+    },
+    {
+        "DevName": "Tsurugi",
+        "PathName": "Tsurugi"
+    },
+    {
+        "DevName": "Tsurugi_Swimsuit",
+        "PathName": "Tsurugi_Swimsuit"
+    },
+    {
+        "DevName": "Utaha",
+        "PathName": "Utaha"
+    },
+    {
+        "DevName": "Wakamo",
+        "PathName": "Wakamo"
+    },
+    {
+        "DevName": "Yoshimi",
+        "PathName": "Yoshimi"
+    },
+    {
+        "DevName": "Yuuka",
+        "PathName": "Yuuka"
+    },
+    {
+        "DevName": "Yuzu",
+        "PathName": "Yuzu"
+    },
+    {
+        "DevName": "Zunko",
+        "PathName": "Junko"
+    }
+]
