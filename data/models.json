@@ -1,0 +1,2790 @@
+[
+    {
+        "name": "Airi_home",
+        "url": "SpineBA/Airi_home.skel"
+    },
+    {
+        "name": "airi_spr",
+        "url": "SpineBA/airi_spr.skel"
+    },
+    {
+        "name": "Akane_home",
+        "url": "SpineBA/Akane_home.skel"
+    },
+    {
+        "name": "akane_spr",
+        "url": "SpineBA/akane_spr.skel"
+    },
+    {
+        "name": "akari_bg",
+        "url": "SpineBA/akari_bg.skel"
+    },
+    {
+        "name": "akari_home",
+        "url": "SpineBA/akari_home.skel"
+    },
+    {
+        "name": "akari_scene",
+        "url": "SpineBA/akari_scene.skel"
+    },
+    {
+        "name": "akari_spr",
+        "url": "SpineBA/akari_spr.skel"
+    },
+    {
+        "name": "Ako_home",
+        "url": "SpineBA/Ako_home.skel"
+    },
+    {
+        "name": "ako_spr",
+        "url": "SpineBA/ako_spr.skel"
+    },
+    {
+        "name": "Aris_home",
+        "url": "SpineBA/Aris_home.skel"
+    },
+    {
+        "name": "aris_noweapon_spr",
+        "url": "SpineBA/aris_noweapon_spr.skel"
+    },
+    {
+        "name": "aris_spr",
+        "url": "SpineBA/aris_spr.skel"
+    },
+    {
+        "name": "Arius_GL1_spr",
+        "url": "SpineBA/Arius_GL1_spr.skel"
+    },
+    {
+        "name": "arona_spr",
+        "url": "SpineBA/arona_spr.skel"
+    },
+    {
+        "name": "arona_workpage",
+        "url": "SpineBA/arona_workpage.skel"
+    },
+    {
+        "name": "arona_workpage_daytime",
+        "url": "SpineBA/arona_workpage_daytime.skel"
+    },
+    {
+        "name": "arona_workpage_nighttime",
+        "url": "SpineBA/arona_workpage_nighttime.skel"
+    },
+    {
+        "name": "Aru_home",
+        "url": "SpineBA/Aru_home.skel"
+    },
+    {
+        "name": "Aru_newyear_home",
+        "url": "SpineBA/Aru_newyear_home.skel"
+    },
+    {
+        "name": "aru_newyear_spr",
+        "url": "SpineBA/aru_newyear_spr.skel"
+    },
+    {
+        "name": "Aru_scene",
+        "url": "SpineBA/Aru_scene.skel"
+    },
+    {
+        "name": "aru_spr",
+        "url": "SpineBA/aru_spr.skel"
+    },
+    {
+        "name": "Asuna_home",
+        "url": "SpineBA/Asuna_home.skel"
+    },
+    {
+        "name": "asuna_spr",
+        "url": "SpineBA/asuna_spr.skel"
+    },
+    {
+        "name": "Atsuko_home",
+        "url": "SpineBA/Atsuko_home.skel"
+    },
+    {
+        "name": "atsuko_spr",
+        "url": "SpineBA/atsuko_spr.skel"
+    },
+    {
+        "name": "Automata_Decagrammaton1_spr",
+        "url": "SpineBA/Automata_Decagrammaton1_spr.skel"
+    },
+    {
+        "name": "Automata_Kurokamegumi1_spr",
+        "url": "SpineBA/Automata_Kurokamegumi1_spr.skel"
+    },
+    {
+        "name": "Automata_PMC1_spr",
+        "url": "SpineBA/Automata_PMC1_spr.skel"
+    },
+    {
+        "name": "Ayane_home",
+        "url": "SpineBA/Ayane_home.skel"
+    },
+    {
+        "name": "ayane_robber_spr",
+        "url": "SpineBA/ayane_robber_spr.skel"
+    },
+    {
+        "name": "ayane_spr",
+        "url": "SpineBA/ayane_spr.skel"
+    },
+    {
+        "name": "Azusa_home",
+        "url": "SpineBA/Azusa_home.skel"
+    },
+    {
+        "name": "azusa_spr",
+        "url": "SpineBA/azusa_spr.skel"
+    },
+    {
+        "name": "Azusa_swimsuit_home",
+        "url": "SpineBA/Azusa_swimsuit_home.skel"
+    },
+    {
+        "name": "azusa_swimsuit_spr",
+        "url": "SpineBA/azusa_swimsuit_spr.skel"
+    },
+    {
+        "name": "blacksuit_spr",
+        "url": "SpineBA/blacksuit_spr.skel"
+    },
+    {
+        "name": "BunnyGirl_SR_spr",
+        "url": "SpineBA/BunnyGirl_SR_spr.skel"
+    },
+    {
+        "name": "CH0058_home",
+        "url": "SpineBA/CH0058_home.skel"
+    },
+    {
+        "name": "CH0058_spr",
+        "url": "SpineBA/CH0058_spr.skel"
+    },
+    {
+        "name": "CH0060BG_home",
+        "url": "SpineBA/CH0060BG_home.skel"
+    },
+    {
+        "name": "CH0060_home",
+        "url": "SpineBA/CH0060_home.skel"
+    },
+    {
+        "name": "CH0060_spr",
+        "url": "SpineBA/CH0060_spr.skel"
+    },
+    {
+        "name": "CH0063_home",
+        "url": "SpineBA/CH0063_home.skel"
+    },
+    {
+        "name": "CH0063_spr",
+        "url": "SpineBA/CH0063_spr.skel"
+    },
+    {
+        "name": "CH0064_home",
+        "url": "SpineBA/CH0064_home.skel"
+    },
+    {
+        "name": "CH0064_spr",
+        "url": "SpineBA/CH0064_spr.skel"
+    },
+    {
+        "name": "CH0066_home",
+        "url": "SpineBA/CH0066_home.skel"
+    },
+    {
+        "name": "CH0066_spr",
+        "url": "SpineBA/CH0066_spr.skel"
+    },
+    {
+        "name": "CH0069_home",
+        "url": "SpineBA/CH0069_home.skel"
+    },
+    {
+        "name": "CH0069_spr",
+        "url": "SpineBA/CH0069_spr.skel"
+    },
+    {
+        "name": "CH0070_spr",
+        "url": "SpineBA/CH0070_spr.skel"
+    },
+    {
+        "name": "CH0071_home",
+        "url": "SpineBA/CH0071_home.skel"
+    },
+    {
+        "name": "CH0071_spr",
+        "url": "SpineBA/CH0071_spr.skel"
+    },
+    {
+        "name": "CH0079_home",
+        "url": "SpineBA/CH0079_home.skel"
+    },
+    {
+        "name": "CH0079_spr",
+        "url": "SpineBA/CH0079_spr.skel"
+    },
+    {
+        "name": "CH0080_spr",
+        "url": "SpineBA/CH0080_spr.skel"
+    },
+    {
+        "name": "CH0081_home",
+        "url": "SpineBA/CH0081_home.skel"
+    },
+    {
+        "name": "CH0086_home",
+        "url": "SpineBA/CH0086_home.skel"
+    },
+    {
+        "name": "CH0086_spr",
+        "url": "SpineBA/CH0086_spr.skel"
+    },
+    {
+        "name": "CH0087_home",
+        "url": "SpineBA/CH0087_home.skel"
+    },
+    {
+        "name": "CH0087_spr",
+        "url": "SpineBA/CH0087_spr.skel"
+    },
+    {
+        "name": "CH0088_home",
+        "url": "SpineBA/CH0088_home.skel"
+    },
+    {
+        "name": "CH0088_spr",
+        "url": "SpineBA/CH0088_spr.skel"
+    },
+    {
+        "name": "CH0089_home",
+        "url": "SpineBA/CH0089_home.skel"
+    },
+    {
+        "name": "CH0089_spr",
+        "url": "SpineBA/CH0089_spr.skel"
+    },
+    {
+        "name": "CH0092_home",
+        "url": "SpineBA/CH0092_home.skel"
+    },
+    {
+        "name": "CH0092_spr",
+        "url": "SpineBA/CH0092_spr.skel"
+    },
+    {
+        "name": "CH0095_home",
+        "url": "SpineBA/CH0095_home.skel"
+    },
+    {
+        "name": "CH0095_spr",
+        "url": "SpineBA/CH0095_spr.skel"
+    },
+    {
+        "name": "CH0098_home",
+        "url": "SpineBA/CH0098_home.skel"
+    },
+    {
+        "name": "CH0098_spr",
+        "url": "SpineBA/CH0098_spr.skel"
+    },
+    {
+        "name": "CH0099_home",
+        "url": "SpineBA/CH0099_home.skel"
+    },
+    {
+        "name": "CH0099_spr",
+        "url": "SpineBA/CH0099_spr.skel"
+    },
+    {
+        "name": "CH0100_home",
+        "url": "SpineBA/CH0100_home.skel"
+    },
+    {
+        "name": "CH0100_spr",
+        "url": "SpineBA/CH0100_spr.skel"
+    },
+    {
+        "name": "CH0101_home",
+        "url": "SpineBA/CH0101_home.skel"
+    },
+    {
+        "name": "CH0101_spr",
+        "url": "SpineBA/CH0101_spr.skel"
+    },
+    {
+        "name": "CH0107_home",
+        "url": "SpineBA/CH0107_home.skel"
+    },
+    {
+        "name": "CH0107_spr",
+        "url": "SpineBA/CH0107_spr.skel"
+    },
+    {
+        "name": "CH0109_spr",
+        "url": "SpineBA/CH0109_spr.skel"
+    },
+    {
+        "name": "CH0110_home",
+        "url": "SpineBA/CH0110_home.skel"
+    },
+    {
+        "name": "CH0110_spr",
+        "url": "SpineBA/CH0110_spr.skel"
+    },
+    {
+        "name": "CH0113_home",
+        "url": "SpineBA/CH0113_home.skel"
+    },
+    {
+        "name": "CH0113_spr",
+        "url": "SpineBA/CH0113_spr.skel"
+    },
+    {
+        "name": "CH0114_home",
+        "url": "SpineBA/CH0114_home.skel"
+    },
+    {
+        "name": "CH0114_spr",
+        "url": "SpineBA/CH0114_spr.skel"
+    },
+    {
+        "name": "CH0123_home",
+        "url": "SpineBA/CH0123_home.skel"
+    },
+    {
+        "name": "CH0123_spr",
+        "url": "SpineBA/CH0123_spr.skel"
+    },
+    {
+        "name": "CH0124_home",
+        "url": "SpineBA/CH0124_home.skel"
+    },
+    {
+        "name": "CH0124_spr",
+        "url": "SpineBA/CH0124_spr.skel"
+    },
+    {
+        "name": "CH0125_spr",
+        "url": "SpineBA/CH0125_spr.skel"
+    },
+    {
+        "name": "CH0135_home",
+        "url": "SpineBA/CH0135_home.skel"
+    },
+    {
+        "name": "CH0135_spr",
+        "url": "SpineBA/CH0135_spr.skel"
+    },
+    {
+        "name": "CH0137_home",
+        "url": "SpineBA/CH0137_home.skel"
+    },
+    {
+        "name": "CH0137_spr",
+        "url": "SpineBA/CH0137_spr.skel"
+    },
+    {
+        "name": "CH0138_home",
+        "url": "SpineBA/CH0138_home.skel"
+    },
+    {
+        "name": "CH0138_spr",
+        "url": "SpineBA/CH0138_spr.skel"
+    },
+    {
+        "name": "CH0139_spr",
+        "url": "SpineBA/CH0139_spr.skel"
+    },
+    {
+        "name": "CH0141_home",
+        "url": "SpineBA/CH0141_home.skel"
+    },
+    {
+        "name": "CH0141_spr",
+        "url": "SpineBA/CH0141_spr.skel"
+    },
+    {
+        "name": "CH0144_home",
+        "url": "SpineBA/CH0144_home.skel"
+    },
+    {
+        "name": "CH0144_spr",
+        "url": "SpineBA/CH0144_spr.skel"
+    },
+    {
+        "name": "CH0145_home",
+        "url": "SpineBA/CH0145_home.skel"
+    },
+    {
+        "name": "CH0145_spr",
+        "url": "SpineBA/CH0145_spr.skel"
+    },
+    {
+        "name": "CH0152_home",
+        "url": "SpineBA/CH0152_home.skel"
+    },
+    {
+        "name": "CH0152_spr",
+        "url": "SpineBA/CH0152_spr.skel"
+    },
+    {
+        "name": "CH0155_home",
+        "url": "SpineBA/CH0155_home.skel"
+    },
+    {
+        "name": "CH0155_spr",
+        "url": "SpineBA/CH0155_spr.skel"
+    },
+    {
+        "name": "CH0156_home",
+        "url": "SpineBA/CH0156_home.skel"
+    },
+    {
+        "name": "CH0156_spr",
+        "url": "SpineBA/CH0156_spr.skel"
+    },
+    {
+        "name": "CH0157_spr",
+        "url": "SpineBA/CH0157_spr.skel"
+    },
+    {
+        "name": "CH0158_spr",
+        "url": "SpineBA/CH0158_spr.skel"
+    },
+    {
+        "name": "CH0159_home",
+        "url": "SpineBA/CH0159_home.skel"
+    },
+    {
+        "name": "CH0159_spr",
+        "url": "SpineBA/CH0159_spr.skel"
+    },
+    {
+        "name": "CH0160_home",
+        "url": "SpineBA/CH0160_home.skel"
+    },
+    {
+        "name": "CH0160_spr",
+        "url": "SpineBA/CH0160_spr.skel"
+    },
+    {
+        "name": "CH0161_home",
+        "url": "SpineBA/CH0161_home.skel"
+    },
+    {
+        "name": "CH0161_spr",
+        "url": "SpineBA/CH0161_spr.skel"
+    },
+    {
+        "name": "CH0162_spr",
+        "url": "SpineBA/CH0162_spr.skel"
+    },
+    {
+        "name": "CH0163_home",
+        "url": "SpineBA/CH0163_home.skel"
+    },
+    {
+        "name": "CH0163_spr",
+        "url": "SpineBA/CH0163_spr.skel"
+    },
+    {
+        "name": "CH0164_home",
+        "url": "SpineBA/CH0164_home.skel"
+    },
+    {
+        "name": "CH0164_spr",
+        "url": "SpineBA/CH0164_spr.skel"
+    },
+    {
+        "name": "CH0165_home",
+        "url": "SpineBA/CH0165_home.skel"
+    },
+    {
+        "name": "CH0165_spr",
+        "url": "SpineBA/CH0165_spr.skel"
+    },
+    {
+        "name": "CH0166_spr",
+        "url": "SpineBA/CH0166_spr.skel"
+    },
+    {
+        "name": "CH0167_home",
+        "url": "SpineBA/CH0167_home.skel"
+    },
+    {
+        "name": "CH0167_spr",
+        "url": "SpineBA/CH0167_spr.skel"
+    },
+    {
+        "name": "CH0169_home",
+        "url": "SpineBA/CH0169_home.skel"
+    },
+    {
+        "name": "CH0169_spr",
+        "url": "SpineBA/CH0169_spr.skel"
+    },
+    {
+        "name": "CH0170_home",
+        "url": "SpineBA/CH0170_home.skel"
+    },
+    {
+        "name": "CH0170_spr",
+        "url": "SpineBA/CH0170_spr.skel"
+    },
+    {
+        "name": "CH0171_spr",
+        "url": "SpineBA/CH0171_spr.skel"
+    },
+    {
+        "name": "CH0172_spr",
+        "url": "SpineBA/CH0172_spr.skel"
+    },
+    {
+        "name": "CH0173_spr",
+        "url": "SpineBA/CH0173_spr.skel"
+    },
+    {
+        "name": "CH0174_spr",
+        "url": "SpineBA/CH0174_spr.skel"
+    },
+    {
+        "name": "CH0175_home",
+        "url": "SpineBA/CH0175_home.skel"
+    },
+    {
+        "name": "CH0175_spr",
+        "url": "SpineBA/CH0175_spr.skel"
+    },
+    {
+        "name": "CH0176_home",
+        "url": "SpineBA/CH0176_home.skel"
+    },
+    {
+        "name": "CH0176_spr",
+        "url": "SpineBA/CH0176_spr.skel"
+    },
+    {
+        "name": "CH0177_home",
+        "url": "SpineBA/CH0177_home.skel"
+    },
+    {
+        "name": "CH0177_spr",
+        "url": "SpineBA/CH0177_spr.skel"
+    },
+    {
+        "name": "CH0178_home",
+        "url": "SpineBA/CH0178_home.skel"
+    },
+    {
+        "name": "CH0178_spr",
+        "url": "SpineBA/CH0178_spr.skel"
+    },
+    {
+        "name": "CH0179_home",
+        "url": "SpineBA/CH0179_home.skel"
+    },
+    {
+        "name": "CH0179_spr",
+        "url": "SpineBA/CH0179_spr.skel"
+    },
+    {
+        "name": "CH0180_home",
+        "url": "SpineBA/CH0180_home.skel"
+    },
+    {
+        "name": "CH0180_spr",
+        "url": "SpineBA/CH0180_spr.skel"
+    },
+    {
+        "name": "CH0181_home",
+        "url": "SpineBA/CH0181_home.skel"
+    },
+    {
+        "name": "CH0181_spr",
+        "url": "SpineBA/CH0181_spr.skel"
+    },
+    {
+        "name": "CH0182_home",
+        "url": "SpineBA/CH0182_home.skel"
+    },
+    {
+        "name": "CH0182_spr",
+        "url": "SpineBA/CH0182_spr.skel"
+    },
+    {
+        "name": "CH0183_home",
+        "url": "SpineBA/CH0183_home.skel"
+    },
+    {
+        "name": "CH0183_spr",
+        "url": "SpineBA/CH0183_spr.skel"
+    },
+    {
+        "name": "CH0184_00",
+        "url": "SpineBA/CH0184_00.skel"
+    },
+    {
+        "name": "CH0184_home",
+        "url": "SpineBA/CH0184_home.skel"
+    },
+    {
+        "name": "CH0184_spr",
+        "url": "SpineBA/CH0184_spr.skel"
+    },
+    {
+        "name": "CH0185_home",
+        "url": "SpineBA/CH0185_home.skel"
+    },
+    {
+        "name": "CH0185_spr",
+        "url": "SpineBA/CH0185_spr.skel"
+    },
+    {
+        "name": "CH0186_home",
+        "url": "SpineBA/CH0186_home.skel"
+    },
+    {
+        "name": "CH0186_spr",
+        "url": "SpineBA/CH0186_spr.skel"
+    },
+    {
+        "name": "CH0187_home",
+        "url": "SpineBA/CH0187_home.skel"
+    },
+    {
+        "name": "CH0187_spr",
+        "url": "SpineBA/CH0187_spr.skel"
+    },
+    {
+        "name": "CH0188_home",
+        "url": "SpineBA/CH0188_home.skel"
+    },
+    {
+        "name": "CH0188_spr",
+        "url": "SpineBA/CH0188_spr.skel"
+    },
+    {
+        "name": "CH0189_home",
+        "url": "SpineBA/CH0189_home.skel"
+    },
+    {
+        "name": "CH0189_spr",
+        "url": "SpineBA/CH0189_spr.skel"
+    },
+    {
+        "name": "CH0190_home",
+        "url": "SpineBA/CH0190_home.skel"
+    },
+    {
+        "name": "CH0190_spr",
+        "url": "SpineBA/CH0190_spr.skel"
+    },
+    {
+        "name": "CH0191_home",
+        "url": "SpineBA/CH0191_home.skel"
+    },
+    {
+        "name": "CH0191_spr",
+        "url": "SpineBA/CH0191_spr.skel"
+    },
+    {
+        "name": "CH0192_home",
+        "url": "SpineBA/CH0192_home.skel"
+    },
+    {
+        "name": "CH0192_spr",
+        "url": "SpineBA/CH0192_spr.skel"
+    },
+    {
+        "name": "CH0193_home",
+        "url": "SpineBA/CH0193_home.skel"
+    },
+    {
+        "name": "CH0193_spr",
+        "url": "SpineBA/CH0193_spr.skel"
+    },
+    {
+        "name": "CH0194_home",
+        "url": "SpineBA/CH0194_home.skel"
+    },
+    {
+        "name": "CH0194_spr",
+        "url": "SpineBA/CH0194_spr.skel"
+    },
+    {
+        "name": "CH0195_home",
+        "url": "SpineBA/CH0195_home.skel"
+    },
+    {
+        "name": "CH0195_spr",
+        "url": "SpineBA/CH0195_spr.skel"
+    },
+    {
+        "name": "CH0196_home",
+        "url": "SpineBA/CH0196_home.skel"
+    },
+    {
+        "name": "CH0196_spr",
+        "url": "SpineBA/CH0196_spr.skel"
+    },
+    {
+        "name": "CH0197_spr",
+        "url": "SpineBA/CH0197_spr.skel"
+    },
+    {
+        "name": "CH0198_home",
+        "url": "SpineBA/CH0198_home.skel"
+    },
+    {
+        "name": "CH0198_spr",
+        "url": "SpineBA/CH0198_spr.skel"
+    },
+    {
+        "name": "CH0199_spr",
+        "url": "SpineBA/CH0199_spr.skel"
+    },
+    {
+        "name": "CH0200_home",
+        "url": "SpineBA/CH0200_home.skel"
+    },
+    {
+        "name": "CH0200_spr",
+        "url": "SpineBA/CH0200_spr.skel"
+    },
+    {
+        "name": "CH0201_home",
+        "url": "SpineBA/CH0201_home.skel"
+    },
+    {
+        "name": "CH0201_spr",
+        "url": "SpineBA/CH0201_spr.skel"
+    },
+    {
+        "name": "CH0202_home",
+        "url": "SpineBA/CH0202_home.skel"
+    },
+    {
+        "name": "CH0202_spr",
+        "url": "SpineBA/CH0202_spr.skel"
+    },
+    {
+        "name": "CH0203_home",
+        "url": "SpineBA/CH0203_home.skel"
+    },
+    {
+        "name": "CH0203_spr",
+        "url": "SpineBA/CH0203_spr.skel"
+    },
+    {
+        "name": "CH0204_home",
+        "url": "SpineBA/CH0204_home.skel"
+    },
+    {
+        "name": "CH0204_spr",
+        "url": "SpineBA/CH0204_spr.skel"
+    },
+    {
+        "name": "CH0205_home",
+        "url": "SpineBA/CH0205_home.skel"
+    },
+    {
+        "name": "CH0205_spr",
+        "url": "SpineBA/CH0205_spr.skel"
+    },
+    {
+        "name": "CH0209_home",
+        "url": "SpineBA/CH0209_home.skel"
+    },
+    {
+        "name": "CH0209_spr",
+        "url": "SpineBA/CH0209_spr.skel"
+    },
+    {
+        "name": "CH0210_home",
+        "url": "SpineBA/CH0210_home.skel"
+    },
+    {
+        "name": "CH0210_spr",
+        "url": "SpineBA/CH0210_spr.skel"
+    },
+    {
+        "name": "CH0211_home",
+        "url": "SpineBA/CH0211_home.skel"
+    },
+    {
+        "name": "CH0211_spr",
+        "url": "SpineBA/CH0211_spr.skel"
+    },
+    {
+        "name": "CH0212_spr",
+        "url": "SpineBA/CH0212_spr.skel"
+    },
+    {
+        "name": "CH0213_spr",
+        "url": "SpineBA/CH0213_spr.skel"
+    },
+    {
+        "name": "CH0214_home",
+        "url": "SpineBA/CH0214_home.skel"
+    },
+    {
+        "name": "CH0214_spr",
+        "url": "SpineBA/CH0214_spr.skel"
+    },
+    {
+        "name": "CH0215_home",
+        "url": "SpineBA/CH0215_home.skel"
+    },
+    {
+        "name": "CH0215_spr",
+        "url": "SpineBA/CH0215_spr.skel"
+    },
+    {
+        "name": "CH0216_home",
+        "url": "SpineBA/CH0216_home.skel"
+    },
+    {
+        "name": "CH0216_spr",
+        "url": "SpineBA/CH0216_spr.skel"
+    },
+    {
+        "name": "CH0217_home",
+        "url": "SpineBA/CH0217_home.skel"
+    },
+    {
+        "name": "CH0217_spr",
+        "url": "SpineBA/CH0217_spr.skel"
+    },
+    {
+        "name": "CH0218_home",
+        "url": "SpineBA/CH0218_home.skel"
+    },
+    {
+        "name": "CH0218_spr",
+        "url": "SpineBA/CH0218_spr.skel"
+    },
+    {
+        "name": "CH0219_home",
+        "url": "SpineBA/CH0219_home.skel"
+    },
+    {
+        "name": "CH0219_spr",
+        "url": "SpineBA/CH0219_spr.skel"
+    },
+    {
+        "name": "CH0220_home",
+        "url": "SpineBA/CH0220_home.skel"
+    },
+    {
+        "name": "CH0220_spr",
+        "url": "SpineBA/CH0220_spr.skel"
+    },
+    {
+        "name": "CH0221_spr",
+        "url": "SpineBA/CH0221_spr.skel"
+    },
+    {
+        "name": "CH0222_spr",
+        "url": "SpineBA/CH0222_spr.skel"
+    },
+    {
+        "name": "CH0224_home",
+        "url": "SpineBA/CH0224_home.skel"
+    },
+    {
+        "name": "CH0224_spr",
+        "url": "SpineBA/CH0224_spr.skel"
+    },
+    {
+        "name": "CH0225_home",
+        "url": "SpineBA/CH0225_home.skel"
+    },
+    {
+        "name": "CH0225_spr",
+        "url": "SpineBA/CH0225_spr.skel"
+    },
+    {
+        "name": "CH0226_spr",
+        "url": "SpineBA/CH0226_spr.skel"
+    },
+    {
+        "name": "CH0227_spr",
+        "url": "SpineBA/CH0227_spr.skel"
+    },
+    {
+        "name": "CH0228_spr",
+        "url": "SpineBA/CH0228_spr.skel"
+    },
+    {
+        "name": "CH0229_spr",
+        "url": "SpineBA/CH0229_spr.skel"
+    },
+    {
+        "name": "CH0230_home",
+        "url": "SpineBA/CH0230_home.skel"
+    },
+    {
+        "name": "CH0230_spr",
+        "url": "SpineBA/CH0230_spr.skel"
+    },
+    {
+        "name": "CH0231_home",
+        "url": "SpineBA/CH0231_home.skel"
+    },
+    {
+        "name": "CH0231_spr",
+        "url": "SpineBA/CH0231_spr.skel"
+    },
+    {
+        "name": "CH0232_home",
+        "url": "SpineBA/CH0232_home.skel"
+    },
+    {
+        "name": "CH0232_spr",
+        "url": "SpineBA/CH0232_spr.skel"
+    },
+    {
+        "name": "CH0233_home",
+        "url": "SpineBA/CH0233_home.skel"
+    },
+    {
+        "name": "CH0233_spr",
+        "url": "SpineBA/CH0233_spr.skel"
+    },
+    {
+        "name": "CH0234_spr",
+        "url": "SpineBA/CH0234_spr.skel"
+    },
+    {
+        "name": "CH0235_spr",
+        "url": "SpineBA/CH0235_spr.skel"
+    },
+    {
+        "name": "CH0236_spr",
+        "url": "SpineBA/CH0236_spr.skel"
+    },
+    {
+        "name": "CH0238_spr",
+        "url": "SpineBA/CH0238_spr.skel"
+    },
+    {
+        "name": "CH0239_home",
+        "url": "SpineBA/CH0239_home.skel"
+    },
+    {
+        "name": "CH0239_spr",
+        "url": "SpineBA/CH0239_spr.skel"
+    },
+    {
+        "name": "CH0240_home",
+        "url": "SpineBA/CH0240_home.skel"
+    },
+    {
+        "name": "CH0240_spr",
+        "url": "SpineBA/CH0240_spr.skel"
+    },
+    {
+        "name": "CH0241_spr",
+        "url": "SpineBA/CH0241_spr.skel"
+    },
+    {
+        "name": "CH0242_spr",
+        "url": "SpineBA/CH0242_spr.skel"
+    },
+    {
+        "name": "CH0243_spr",
+        "url": "SpineBA/CH0243_spr.skel"
+    },
+    {
+        "name": "CH0244_spr",
+        "url": "SpineBA/CH0244_spr.skel"
+    },
+    {
+        "name": "CH0245_spr",
+        "url": "SpineBA/CH0245_spr.skel"
+    },
+    {
+        "name": "CH0246_spr",
+        "url": "SpineBA/CH0246_spr.skel"
+    },
+    {
+        "name": "CH0247_spr",
+        "url": "SpineBA/CH0247_spr.skel"
+    },
+    {
+        "name": "CH0248_spr",
+        "url": "SpineBA/CH0248_spr.skel"
+    },
+    {
+        "name": "CH0249_spr",
+        "url": "SpineBA/CH0249_spr.skel"
+    },
+    {
+        "name": "CH0250_home",
+        "url": "SpineBA/CH0250_home.skel"
+    },
+    {
+        "name": "CH0250_spr",
+        "url": "SpineBA/CH0250_spr.skel"
+    },
+    {
+        "name": "CH0251_home",
+        "url": "SpineBA/CH0251_home.skel"
+    },
+    {
+        "name": "CH0251_spr",
+        "url": "SpineBA/CH0251_spr.skel"
+    },
+    {
+        "name": "CH0252_spr",
+        "url": "SpineBA/CH0252_spr.skel"
+    },
+    {
+        "name": "CH0253_spr",
+        "url": "SpineBA/CH0253_spr.skel"
+    },
+    {
+        "name": "CH0254_spr",
+        "url": "SpineBA/CH0254_spr.skel"
+    },
+    {
+        "name": "CH0255_home",
+        "url": "SpineBA/CH0255_home.skel"
+    },
+    {
+        "name": "CH0255_spr",
+        "url": "SpineBA/CH0255_spr.skel"
+    },
+    {
+        "name": "CH0256_spr",
+        "url": "SpineBA/CH0256_spr.skel"
+    },
+    {
+        "name": "CH0257_spr",
+        "url": "SpineBA/CH0257_spr.skel"
+    },
+    {
+        "name": "CH0258_spr",
+        "url": "SpineBA/CH0258_spr.skel"
+    },
+    {
+        "name": "CH0259_spr",
+        "url": "SpineBA/CH0259_spr.skel"
+    },
+    {
+        "name": "CH0260_home",
+        "url": "SpineBA/CH0260_home.skel"
+    },
+    {
+        "name": "CH0260_spr",
+        "url": "SpineBA/CH0260_spr.skel"
+    },
+    {
+        "name": "CH0261_home",
+        "url": "SpineBA/CH0261_home.skel"
+    },
+    {
+        "name": "CH0261_spr",
+        "url": "SpineBA/CH0261_spr.skel"
+    },
+    {
+        "name": "CH0262_home",
+        "url": "SpineBA/CH0262_home.skel"
+    },
+    {
+        "name": "CH0262_spr",
+        "url": "SpineBA/CH0262_spr.skel"
+    },
+    {
+        "name": "CH0264_spr",
+        "url": "SpineBA/CH0264_spr.skel"
+    },
+    {
+        "name": "CH0279_spr",
+        "url": "SpineBA/CH0279_spr.skel"
+    },
+    {
+        "name": "CH9996_spr",
+        "url": "SpineBA/CH9996_spr.skel"
+    },
+    {
+        "name": "CH9997_home",
+        "url": "SpineBA/CH9997_home.skel"
+    },
+    {
+        "name": "CH9997_spr",
+        "url": "SpineBA/CH9997_spr.skel"
+    },
+    {
+        "name": "CH9998_home",
+        "url": "SpineBA/CH9998_home.skel"
+    },
+    {
+        "name": "CH9998_spr",
+        "url": "SpineBA/CH9998_spr.skel"
+    },
+    {
+        "name": "CH9999_home",
+        "url": "SpineBA/CH9999_home.skel"
+    },
+    {
+        "name": "CH9999_spr",
+        "url": "SpineBA/CH9999_spr.skel"
+    },
+    {
+        "name": "Cherino_home",
+        "url": "SpineBA/Cherino_home.skel"
+    },
+    {
+        "name": "cherino_spr",
+        "url": "SpineBA/cherino_spr.skel"
+    },
+    {
+        "name": "Chinatsu_home",
+        "url": "SpineBA/Chinatsu_home.skel"
+    },
+    {
+        "name": "chinatsu_spr",
+        "url": "SpineBA/chinatsu_spr.skel"
+    },
+    {
+        "name": "Chise_home",
+        "url": "SpineBA/Chise_home.skel"
+    },
+    {
+        "name": "chise_spr",
+        "url": "SpineBA/chise_spr.skel"
+    },
+    {
+        "name": "citizen_animal1_spr",
+        "url": "SpineBA/citizen_animal1_spr.skel"
+    },
+    {
+        "name": "Citizen_animal5_eyepatch_spr",
+        "url": "SpineBA/Citizen_animal5_eyepatch_spr.skel"
+    },
+    {
+        "name": "Citizen_animal5_spr",
+        "url": "SpineBA/Citizen_animal5_spr.skel"
+    },
+    {
+        "name": "Citizen_animal6_bandagespr",
+        "url": "SpineBA/Citizen_animal6_bandagespr.skel"
+    },
+    {
+        "name": "Citizen_animal6_spr",
+        "url": "SpineBA/Citizen_animal6_spr.skel"
+    },
+    {
+        "name": "Citizen_animal7_spr",
+        "url": "SpineBA/Citizen_animal7_spr.skel"
+    },
+    {
+        "name": "citizen_borot1_spr",
+        "url": "SpineBA/citizen_borot1_spr.skel"
+    },
+    {
+        "name": "citizen_borot2_spr",
+        "url": "SpineBA/citizen_borot2_spr.skel"
+    },
+    {
+        "name": "Cook_GenbuStore_SG_spr",
+        "url": "SpineBA/Cook_GenbuStore_SG_spr.skel"
+    },
+    {
+        "name": "Eimi_home",
+        "url": "SpineBA/Eimi_home.skel"
+    },
+    {
+        "name": "eimi_spr",
+        "url": "SpineBA/eimi_spr.skel"
+    },
+    {
+        "name": "engineer_animal3_spr",
+        "url": "SpineBA/engineer_animal3_spr.skel"
+    },
+    {
+        "name": "erika_spr",
+        "url": "SpineBA/erika_spr.skel"
+    },
+    {
+        "name": "Fuuka_home",
+        "url": "SpineBA/Fuuka_home.skel"
+    },
+    {
+        "name": "Fuuka_Scene",
+        "url": "SpineBA/Fuuka_Scene.skel"
+    },
+    {
+        "name": "fuuka_spr",
+        "url": "SpineBA/fuuka_spr.skel"
+    },
+    {
+        "name": "fuuki_normal1_spr",
+        "url": "SpineBA/fuuki_normal1_spr.skel"
+    },
+    {
+        "name": "Hanae_home",
+        "url": "SpineBA/Hanae_home.skel"
+    },
+    {
+        "name": "hanae_spr",
+        "url": "SpineBA/hanae_spr.skel"
+    },
+    {
+        "name": "Hanako_home",
+        "url": "SpineBA/Hanako_home.skel"
+    },
+    {
+        "name": "hanako_spr",
+        "url": "SpineBA/hanako_spr.skel"
+    },
+    {
+        "name": "Hare_home",
+        "url": "SpineBA/Hare_home.skel"
+    },
+    {
+        "name": "hare_spr",
+        "url": "SpineBA/hare_spr.skel"
+    },
+    {
+        "name": "Haruka_home",
+        "url": "SpineBA/Haruka_home.skel"
+    },
+    {
+        "name": "haruka_spr",
+        "url": "SpineBA/haruka_spr.skel"
+    },
+    {
+        "name": "Haruna_home",
+        "url": "SpineBA/Haruna_home.skel"
+    },
+    {
+        "name": "haruna_spr",
+        "url": "SpineBA/haruna_spr.skel"
+    },
+    {
+        "name": "Hasumi_home",
+        "url": "SpineBA/Hasumi_home.skel"
+    },
+    {
+        "name": "hasumi_spr",
+        "url": "SpineBA/hasumi_spr.skel"
+    },
+    {
+        "name": "helmetdan_black1_spr",
+        "url": "SpineBA/helmetdan_black1_spr.skel"
+    },
+    {
+        "name": "helmetdan_red1_spr",
+        "url": "SpineBA/helmetdan_red1_spr.skel"
+    },
+    {
+        "name": "Hibiki_home",
+        "url": "SpineBA/Hibiki_home.skel"
+    },
+    {
+        "name": "hibiki_spr",
+        "url": "SpineBA/hibiki_spr.skel"
+    },
+    {
+        "name": "Hihumi_home",
+        "url": "SpineBA/Hihumi_home.skel"
+    },
+    {
+        "name": "hihumi_robber_spr",
+        "url": "SpineBA/hihumi_robber_spr.skel"
+    },
+    {
+        "name": "hihumi_spr",
+        "url": "SpineBA/hihumi_spr.skel"
+    },
+    {
+        "name": "Hinata_home",
+        "url": "SpineBA/Hinata_home.skel"
+    },
+    {
+        "name": "hinata_spr",
+        "url": "SpineBA/hinata_spr.skel"
+    },
+    {
+        "name": "Hina_home",
+        "url": "SpineBA/Hina_home.skel"
+    },
+    {
+        "name": "hina_spr",
+        "url": "SpineBA/hina_spr.skel"
+    },
+    {
+        "name": "Hiyori_home",
+        "url": "SpineBA/Hiyori_home.skel"
+    },
+    {
+        "name": "hiyori_spr",
+        "url": "SpineBA/hiyori_spr.skel"
+    },
+    {
+        "name": "Hoshino_home",
+        "url": "SpineBA/Hoshino_home.skel"
+    },
+    {
+        "name": "Hoshino_home_background",
+        "url": "SpineBA/Hoshino_home_background.skel"
+    },
+    {
+        "name": "hoshino_robber_spr",
+        "url": "SpineBA/hoshino_robber_spr.skel"
+    },
+    {
+        "name": "hoshino_spr",
+        "url": "SpineBA/hoshino_spr.skel"
+    },
+    {
+        "name": "Hoshino_swimsuit_home",
+        "url": "SpineBA/Hoshino_swimsuit_home.skel"
+    },
+    {
+        "name": "hoshino_swimsuit_spr",
+        "url": "SpineBA/hoshino_swimsuit_spr.skel"
+    },
+    {
+        "name": "Ibuki_home",
+        "url": "SpineBA/Ibuki_home.skel"
+    },
+    {
+        "name": "ibuki_spr",
+        "url": "SpineBA/ibuki_spr.skel"
+    },
+    {
+        "name": "Iori_home",
+        "url": "SpineBA/Iori_home.skel"
+    },
+    {
+        "name": "iori_spr",
+        "url": "SpineBA/iori_spr.skel"
+    },
+    {
+        "name": "Izumi_home",
+        "url": "SpineBA/Izumi_home.skel"
+    },
+    {
+        "name": "izumi_spr",
+        "url": "SpineBA/izumi_spr.skel"
+    },
+    {
+        "name": "Izumi_swimsuit_home",
+        "url": "SpineBA/Izumi_swimsuit_home.skel"
+    },
+    {
+        "name": "izumi_swimsuit_spr",
+        "url": "SpineBA/izumi_swimsuit_spr.skel"
+    },
+    {
+        "name": "Izuna_home",
+        "url": "SpineBA/Izuna_home.skel"
+    },
+    {
+        "name": "izuna_spr",
+        "url": "SpineBA/izuna_spr.skel"
+    },
+    {
+        "name": "juri_spr",
+        "url": "SpineBA/juri_spr.skel"
+    },
+    {
+        "name": "Justice_normal1_spr",
+        "url": "SpineBA/Justice_normal1_spr.skel"
+    },
+    {
+        "name": "Kaede_home",
+        "url": "SpineBA/Kaede_home.skel"
+    },
+    {
+        "name": "kaede_spr",
+        "url": "SpineBA/kaede_spr.skel"
+    },
+    {
+        "name": "kaitenranger_black_spr",
+        "url": "SpineBA/kaitenranger_black_spr.skel"
+    },
+    {
+        "name": "kaitenranger_green_spr",
+        "url": "SpineBA/kaitenranger_green_spr.skel"
+    },
+    {
+        "name": "kaitenranger_pink_spr",
+        "url": "SpineBA/kaitenranger_pink_spr.skel"
+    },
+    {
+        "name": "kaitenranger_red_spr",
+        "url": "SpineBA/kaitenranger_red_spr.skel"
+    },
+    {
+        "name": "kaitenranger_yellow_spr",
+        "url": "SpineBA/kaitenranger_yellow_spr.skel"
+    },
+    {
+        "name": "Karin_home",
+        "url": "SpineBA/Karin_home.skel"
+    },
+    {
+        "name": "karin_spr",
+        "url": "SpineBA/karin_spr.skel"
+    },
+    {
+        "name": "Kayoko_home",
+        "url": "SpineBA/Kayoko_home.skel"
+    },
+    {
+        "name": "kayoko_spr",
+        "url": "SpineBA/kayoko_spr.skel"
+    },
+    {
+        "name": "kazusa_home",
+        "url": "SpineBA/kazusa_home.skel"
+    },
+    {
+        "name": "kazusa_spr",
+        "url": "SpineBA/kazusa_spr.skel"
+    },
+    {
+        "name": "Kirara_home",
+        "url": "SpineBA/Kirara_home.skel"
+    },
+    {
+        "name": "kirara_spr",
+        "url": "SpineBA/kirara_spr.skel"
+    },
+    {
+        "name": "kirino_home",
+        "url": "SpineBA/kirino_home.skel"
+    },
+    {
+        "name": "kirino_spr",
+        "url": "SpineBA/kirino_spr.skel"
+    },
+    {
+        "name": "Koharu_home",
+        "url": "SpineBA/Koharu_home.skel"
+    },
+    {
+        "name": "koharu_spr",
+        "url": "SpineBA/koharu_spr.skel"
+    },
+    {
+        "name": "Kotama_home",
+        "url": "SpineBA/Kotama_home.skel"
+    },
+    {
+        "name": "Kotama_skill_bear",
+        "url": "SpineBA/Kotama_skill_bear.skel"
+    },
+    {
+        "name": "kotama_spr",
+        "url": "SpineBA/kotama_spr.skel"
+    },
+    {
+        "name": "Kotori_home",
+        "url": "SpineBA/Kotori_home.skel"
+    },
+    {
+        "name": "kotori_spr",
+        "url": "SpineBA/kotori_spr.skel"
+    },
+    {
+        "name": "Maestro_spr",
+        "url": "SpineBA/Maestro_spr.skel"
+    },
+    {
+        "name": "mai_spr",
+        "url": "SpineBA/mai_spr.skel"
+    },
+    {
+        "name": "Maki_home",
+        "url": "SpineBA/Maki_home.skel"
+    },
+    {
+        "name": "maki_spr",
+        "url": "SpineBA/maki_spr.skel"
+    },
+    {
+        "name": "Marina_home",
+        "url": "SpineBA/Marina_home.skel"
+    },
+    {
+        "name": "marina_spr",
+        "url": "SpineBA/marina_spr.skel"
+    },
+    {
+        "name": "mari_home",
+        "url": "SpineBA/mari_home.skel"
+    },
+    {
+        "name": "mari_spr",
+        "url": "SpineBA/mari_spr.skel"
+    },
+    {
+        "name": "market_animal2_spr",
+        "url": "SpineBA/market_animal2_spr.skel"
+    },
+    {
+        "name": "Mashiro_home",
+        "url": "SpineBA/Mashiro_home.skel"
+    },
+    {
+        "name": "mashiro_spr",
+        "url": "SpineBA/mashiro_spr.skel"
+    },
+    {
+        "name": "Mashiro_swimsuit_home",
+        "url": "SpineBA/Mashiro_swimsuit_home.skel"
+    },
+    {
+        "name": "mashiro_swimsuit_spr",
+        "url": "SpineBA/mashiro_swimsuit_spr.skel"
+    },
+    {
+        "name": "Midori_home",
+        "url": "SpineBA/Midori_home.skel"
+    },
+    {
+        "name": "midori_spr",
+        "url": "SpineBA/midori_spr.skel"
+    },
+    {
+        "name": "Mimori_home",
+        "url": "SpineBA/Mimori_home.skel"
+    },
+    {
+        "name": "mimori_spr",
+        "url": "SpineBA/mimori_spr.skel"
+    },
+    {
+        "name": "minori_spr",
+        "url": "SpineBA/minori_spr.skel"
+    },
+    {
+        "name": "Misaki_home",
+        "url": "SpineBA/Misaki_home.skel"
+    },
+    {
+        "name": "misaki_spr",
+        "url": "SpineBA/misaki_spr.skel"
+    },
+    {
+        "name": "Miyako_home",
+        "url": "SpineBA/Miyako_home.skel"
+    },
+    {
+        "name": "miyako_spr",
+        "url": "SpineBA/miyako_spr.skel"
+    },
+    {
+        "name": "Moe_home",
+        "url": "SpineBA/Moe_home.skel"
+    },
+    {
+        "name": "moe_spr",
+        "url": "SpineBA/moe_spr.skel"
+    },
+    {
+        "name": "momiji_home",
+        "url": "SpineBA/momiji_home.skel"
+    },
+    {
+        "name": "momiji_spr",
+        "url": "SpineBA/momiji_spr.skel"
+    },
+    {
+        "name": "Momoi_home",
+        "url": "SpineBA/Momoi_home.skel"
+    },
+    {
+        "name": "Momoi_Scene",
+        "url": "SpineBA/Momoi_Scene.skel"
+    },
+    {
+        "name": "momoi_spr",
+        "url": "SpineBA/momoi_spr.skel"
+    },
+    {
+        "name": "momoka_spr",
+        "url": "SpineBA/momoka_spr.skel"
+    },
+    {
+        "name": "Momoka_weekdungeon",
+        "url": "SpineBA/Momoka_weekdungeon.skel"
+    },
+    {
+        "name": "Mutsuki_home",
+        "url": "SpineBA/Mutsuki_home.skel"
+    },
+    {
+        "name": "mutsuki_newyear_home",
+        "url": "SpineBA/mutsuki_newyear_home.skel"
+    },
+    {
+        "name": "mutsuki_newyear_spr",
+        "url": "SpineBA/mutsuki_newyear_spr.skel"
+    },
+    {
+        "name": "mutsuki_spr",
+        "url": "SpineBA/mutsuki_spr.skel"
+    },
+    {
+        "name": "Nagisa_home",
+        "url": "SpineBA/Nagisa_home.skel"
+    },
+    {
+        "name": "nagisa_spr",
+        "url": "SpineBA/nagisa_spr.skel"
+    },
+    {
+        "name": "Neru_home",
+        "url": "SpineBA/Neru_home.skel"
+    },
+    {
+        "name": "neru_spr",
+        "url": "SpineBA/neru_spr.skel"
+    },
+    {
+        "name": "Nodoka_home",
+        "url": "SpineBA/Nodoka_home.skel"
+    },
+    {
+        "name": "nodoka_spr",
+        "url": "SpineBA/nodoka_spr.skel"
+    },
+    {
+        "name": "Nonomi_home",
+        "url": "SpineBA/Nonomi_home.skel"
+    },
+    {
+        "name": "nonomi_robber_spr",
+        "url": "SpineBA/nonomi_robber_spr.skel"
+    },
+    {
+        "name": "nonomi_spr",
+        "url": "SpineBA/nonomi_spr.skel"
+    },
+    {
+        "name": "NP0001_spr",
+        "url": "SpineBA/NP0001_spr.skel"
+    },
+    {
+        "name": "NP0002_spr",
+        "url": "SpineBA/NP0002_spr.skel"
+    },
+    {
+        "name": "NP0003_spr",
+        "url": "SpineBA/NP0003_spr.skel"
+    },
+    {
+        "name": "NP0004_spr",
+        "url": "SpineBA/NP0004_spr.skel"
+    },
+    {
+        "name": "NP0005_spr",
+        "url": "SpineBA/NP0005_spr.skel"
+    },
+    {
+        "name": "NP0006_spr",
+        "url": "SpineBA/NP0006_spr.skel"
+    },
+    {
+        "name": "NP0007_spr",
+        "url": "SpineBA/NP0007_spr.skel"
+    },
+    {
+        "name": "NP0008_spr",
+        "url": "SpineBA/NP0008_spr.skel"
+    },
+    {
+        "name": "NP0009_spr",
+        "url": "SpineBA/NP0009_spr.skel"
+    },
+    {
+        "name": "NP0010_spr",
+        "url": "SpineBA/NP0010_spr.skel"
+    },
+    {
+        "name": "NP0011_spr",
+        "url": "SpineBA/NP0011_spr.skel"
+    },
+    {
+        "name": "NP0012_spr",
+        "url": "SpineBA/NP0012_spr.skel"
+    },
+    {
+        "name": "NP0013_quest",
+        "url": "SpineBA/NP0013_quest.skel"
+    },
+    {
+        "name": "NP0013_spr",
+        "url": "SpineBA/NP0013_spr.skel"
+    },
+    {
+        "name": "NP0014_spr",
+        "url": "SpineBA/NP0014_spr.skel"
+    },
+    {
+        "name": "NP0015_spr",
+        "url": "SpineBA/NP0015_spr.skel"
+    },
+    {
+        "name": "NP0017_spr",
+        "url": "SpineBA/NP0017_spr.skel"
+    },
+    {
+        "name": "NP0018_spr",
+        "url": "SpineBA/NP0018_spr.skel"
+    },
+    {
+        "name": "NP0019_spr",
+        "url": "SpineBA/NP0019_spr.skel"
+    },
+    {
+        "name": "NP0020_spr",
+        "url": "SpineBA/NP0020_spr.skel"
+    },
+    {
+        "name": "NP0021_spr",
+        "url": "SpineBA/NP0021_spr.skel"
+    },
+    {
+        "name": "NP0022_spr",
+        "url": "SpineBA/NP0022_spr.skel"
+    },
+    {
+        "name": "NP0023_spr",
+        "url": "SpineBA/NP0023_spr.skel"
+    },
+    {
+        "name": "NP0024_spr",
+        "url": "SpineBA/NP0024_spr.skel"
+    },
+    {
+        "name": "NP0025_spr",
+        "url": "SpineBA/NP0025_spr.skel"
+    },
+    {
+        "name": "NP0026_spr",
+        "url": "SpineBA/NP0026_spr.skel"
+    },
+    {
+        "name": "NP0027_spr",
+        "url": "SpineBA/NP0027_spr.skel"
+    },
+    {
+        "name": "NP0028_spr",
+        "url": "SpineBA/NP0028_spr.skel"
+    },
+    {
+        "name": "NP0029_spr",
+        "url": "SpineBA/NP0029_spr.skel"
+    },
+    {
+        "name": "NP0031_spr",
+        "url": "SpineBA/NP0031_spr.skel"
+    },
+    {
+        "name": "NP0032_npc",
+        "url": "SpineBA/NP0032_npc.skel"
+    },
+    {
+        "name": "NP0032_spr",
+        "url": "SpineBA/NP0032_spr.skel"
+    },
+    {
+        "name": "NP0033_spr",
+        "url": "SpineBA/NP0033_spr.skel"
+    },
+    {
+        "name": "NP0034_spr",
+        "url": "SpineBA/NP0034_spr.skel"
+    },
+    {
+        "name": "NP0035_spr",
+        "url": "SpineBA/NP0035_spr.skel"
+    },
+    {
+        "name": "NP0036_spr",
+        "url": "SpineBA/NP0036_spr.skel"
+    },
+    {
+        "name": "NP0037_spr",
+        "url": "SpineBA/NP0037_spr.skel"
+    },
+    {
+        "name": "NP0038_spr",
+        "url": "SpineBA/NP0038_spr.skel"
+    },
+    {
+        "name": "NP0040_spr",
+        "url": "SpineBA/NP0040_spr.skel"
+    },
+    {
+        "name": "NP0041_spr",
+        "url": "SpineBA/NP0041_spr.skel"
+    },
+    {
+        "name": "NP0042_spr",
+        "url": "SpineBA/NP0042_spr.skel"
+    },
+    {
+        "name": "NP0043_spr",
+        "url": "SpineBA/NP0043_spr.skel"
+    },
+    {
+        "name": "NP0044_spr",
+        "url": "SpineBA/NP0044_spr.skel"
+    },
+    {
+        "name": "NP0045_spr",
+        "url": "SpineBA/NP0045_spr.skel"
+    },
+    {
+        "name": "NP0046_spr",
+        "url": "SpineBA/NP0046_spr.skel"
+    },
+    {
+        "name": "NP0047_spr",
+        "url": "SpineBA/NP0047_spr.skel"
+    },
+    {
+        "name": "NP0048_spr",
+        "url": "SpineBA/NP0048_spr.skel"
+    },
+    {
+        "name": "NP0049_spr",
+        "url": "SpineBA/NP0049_spr.skel"
+    },
+    {
+        "name": "NP0050_spr",
+        "url": "SpineBA/NP0050_spr.skel"
+    },
+    {
+        "name": "NP0051_spr",
+        "url": "SpineBA/NP0051_spr.skel"
+    },
+    {
+        "name": "NP0052_spr",
+        "url": "SpineBA/NP0052_spr.skel"
+    },
+    {
+        "name": "NP0053_spr",
+        "url": "SpineBA/NP0053_spr.skel"
+    },
+    {
+        "name": "NP0054_spr",
+        "url": "SpineBA/NP0054_spr.skel"
+    },
+    {
+        "name": "NP0055_spr",
+        "url": "SpineBA/NP0055_spr.skel"
+    },
+    {
+        "name": "NP0056_spr",
+        "url": "SpineBA/NP0056_spr.skel"
+    },
+    {
+        "name": "NP0057_spr",
+        "url": "SpineBA/NP0057_spr.skel"
+    },
+    {
+        "name": "NP0058_spr",
+        "url": "SpineBA/NP0058_spr.skel"
+    },
+    {
+        "name": "NP0059_spr",
+        "url": "SpineBA/NP0059_spr.skel"
+    },
+    {
+        "name": "NP0060_spr",
+        "url": "SpineBA/NP0060_spr.skel"
+    },
+    {
+        "name": "NP0061_spr",
+        "url": "SpineBA/NP0061_spr.skel"
+    },
+    {
+        "name": "NP0062_spr",
+        "url": "SpineBA/NP0062_spr.skel"
+    },
+    {
+        "name": "NP0063_spr",
+        "url": "SpineBA/NP0063_spr.skel"
+    },
+    {
+        "name": "NP0064_spr",
+        "url": "SpineBA/NP0064_spr.skel"
+    },
+    {
+        "name": "NP0065_spr",
+        "url": "SpineBA/NP0065_spr.skel"
+    },
+    {
+        "name": "NP0066_spr",
+        "url": "SpineBA/NP0066_spr.skel"
+    },
+    {
+        "name": "NP0067_spr",
+        "url": "SpineBA/NP0067_spr.skel"
+    },
+    {
+        "name": "NP0068_spr",
+        "url": "SpineBA/NP0068_spr.skel"
+    },
+    {
+        "name": "NP0069_spr",
+        "url": "SpineBA/NP0069_spr.skel"
+    },
+    {
+        "name": "NP0070_spr",
+        "url": "SpineBA/NP0070_spr.skel"
+    },
+    {
+        "name": "NP0071_spr",
+        "url": "SpineBA/NP0071_spr.skel"
+    },
+    {
+        "name": "NP0072_spr",
+        "url": "SpineBA/NP0072_spr.skel"
+    },
+    {
+        "name": "NP0073_spr",
+        "url": "SpineBA/NP0073_spr.skel"
+    },
+    {
+        "name": "NP0074_spr",
+        "url": "SpineBA/NP0074_spr.skel"
+    },
+    {
+        "name": "NP0075_spr",
+        "url": "SpineBA/NP0075_spr.skel"
+    },
+    {
+        "name": "NP0076_spr",
+        "url": "SpineBA/NP0076_spr.skel"
+    },
+    {
+        "name": "NP0077_spr",
+        "url": "SpineBA/NP0077_spr.skel"
+    },
+    {
+        "name": "NP0078_spr",
+        "url": "SpineBA/NP0078_spr.skel"
+    },
+    {
+        "name": "NP0079_spr",
+        "url": "SpineBA/NP0079_spr.skel"
+    },
+    {
+        "name": "NP0080_spr",
+        "url": "SpineBA/NP0080_spr.skel"
+    },
+    {
+        "name": "NP0081_spr",
+        "url": "SpineBA/NP0081_spr.skel"
+    },
+    {
+        "name": "NP0082_spr",
+        "url": "SpineBA/NP0082_spr.skel"
+    },
+    {
+        "name": "NP0083_spr",
+        "url": "SpineBA/NP0083_spr.skel"
+    },
+    {
+        "name": "NP0084_spr",
+        "url": "SpineBA/NP0084_spr.skel"
+    },
+    {
+        "name": "NP0085_spr",
+        "url": "SpineBA/NP0085_spr.skel"
+    },
+    {
+        "name": "NP0086_spr",
+        "url": "SpineBA/NP0086_spr.skel"
+    },
+    {
+        "name": "NP0087_spr",
+        "url": "SpineBA/NP0087_spr.skel"
+    },
+    {
+        "name": "NP0088_spr",
+        "url": "SpineBA/NP0088_spr.skel"
+    },
+    {
+        "name": "NP0089_spr",
+        "url": "SpineBA/NP0089_spr.skel"
+    },
+    {
+        "name": "NP0090_spr",
+        "url": "SpineBA/NP0090_spr.skel"
+    },
+    {
+        "name": "NP0091_spr",
+        "url": "SpineBA/NP0091_spr.skel"
+    },
+    {
+        "name": "NP0092_spr",
+        "url": "SpineBA/NP0092_spr.skel"
+    },
+    {
+        "name": "NP0093_spr",
+        "url": "SpineBA/NP0093_spr.skel"
+    },
+    {
+        "name": "NP0094_spr",
+        "url": "SpineBA/NP0094_spr.skel"
+    },
+    {
+        "name": "NP0095_spr",
+        "url": "SpineBA/NP0095_spr.skel"
+    },
+    {
+        "name": "NP0096_spr",
+        "url": "SpineBA/NP0096_spr.skel"
+    },
+    {
+        "name": "NP0097_spr",
+        "url": "SpineBA/NP0097_spr.skel"
+    },
+    {
+        "name": "NP0098_spr",
+        "url": "SpineBA/NP0098_spr.skel"
+    },
+    {
+        "name": "NP0099_spr",
+        "url": "SpineBA/NP0099_spr.skel"
+    },
+    {
+        "name": "NP0100_spr",
+        "url": "SpineBA/NP0100_spr.skel"
+    },
+    {
+        "name": "NP0101_spr",
+        "url": "SpineBA/NP0101_spr.skel"
+    },
+    {
+        "name": "NP0102_spr",
+        "url": "SpineBA/NP0102_spr.skel"
+    },
+    {
+        "name": "NP0103_spr",
+        "url": "SpineBA/NP0103_spr.skel"
+    },
+    {
+        "name": "NP0104_spr",
+        "url": "SpineBA/NP0104_spr.skel"
+    },
+    {
+        "name": "NP0105_spr",
+        "url": "SpineBA/NP0105_spr.skel"
+    },
+    {
+        "name": "NP0106_spr",
+        "url": "SpineBA/NP0106_spr.skel"
+    },
+    {
+        "name": "NP0107_spr",
+        "url": "SpineBA/NP0107_spr.skel"
+    },
+    {
+        "name": "NP0108_spr",
+        "url": "SpineBA/NP0108_spr.skel"
+    },
+    {
+        "name": "NP0109_spr",
+        "url": "SpineBA/NP0109_spr.skel"
+    },
+    {
+        "name": "NP0110_spr",
+        "url": "SpineBA/NP0110_spr.skel"
+    },
+    {
+        "name": "NP0111_spr",
+        "url": "SpineBA/NP0111_spr.skel"
+    },
+    {
+        "name": "NP0112_spr",
+        "url": "SpineBA/NP0112_spr.skel"
+    },
+    {
+        "name": "NP0113_spr",
+        "url": "SpineBA/NP0113_spr.skel"
+    },
+    {
+        "name": "NP0114_spr",
+        "url": "SpineBA/NP0114_spr.skel"
+    },
+    {
+        "name": "NP0115_spr",
+        "url": "SpineBA/NP0115_spr.skel"
+    },
+    {
+        "name": "NP0116_spr",
+        "url": "SpineBA/NP0116_spr.skel"
+    },
+    {
+        "name": "NP0118_spr",
+        "url": "SpineBA/NP0118_spr.skel"
+    },
+    {
+        "name": "NP0121_spr",
+        "url": "SpineBA/NP0121_spr.skel"
+    },
+    {
+        "name": "NP0122_spr",
+        "url": "SpineBA/NP0122_spr.skel"
+    },
+    {
+        "name": "NP0123_spr",
+        "url": "SpineBA/NP0123_spr.skel"
+    },
+    {
+        "name": "NP0124_spr",
+        "url": "SpineBA/NP0124_spr.skel"
+    },
+    {
+        "name": "NP0125_spr",
+        "url": "SpineBA/NP0125_spr.skel"
+    },
+    {
+        "name": "NP0126_spr",
+        "url": "SpineBA/NP0126_spr.skel"
+    },
+    {
+        "name": "NP0129_spr",
+        "url": "SpineBA/NP0129_spr.skel"
+    },
+    {
+        "name": "NP0130_spr",
+        "url": "SpineBA/NP0130_spr.skel"
+    },
+    {
+        "name": "NP0131_spr",
+        "url": "SpineBA/NP0131_spr.skel"
+    },
+    {
+        "name": "NP0132_spr",
+        "url": "SpineBA/NP0132_spr.skel"
+    },
+    {
+        "name": "NP0133_spr",
+        "url": "SpineBA/NP0133_spr.skel"
+    },
+    {
+        "name": "NP0134_spr",
+        "url": "SpineBA/NP0134_spr.skel"
+    },
+    {
+        "name": "NP0135_spr",
+        "url": "SpineBA/NP0135_spr.skel"
+    },
+    {
+        "name": "NP0136_spr",
+        "url": "SpineBA/NP0136_spr.skel"
+    },
+    {
+        "name": "NP0137_spr",
+        "url": "SpineBA/NP0137_spr.skel"
+    },
+    {
+        "name": "NP0138_spr",
+        "url": "SpineBA/NP0138_spr.skel"
+    },
+    {
+        "name": "NP0139_spr",
+        "url": "SpineBA/NP0139_spr.skel"
+    },
+    {
+        "name": "NP0140_spr",
+        "url": "SpineBA/NP0140_spr.skel"
+    },
+    {
+        "name": "NP0141_spr",
+        "url": "SpineBA/NP0141_spr.skel"
+    },
+    {
+        "name": "NP0142_spr",
+        "url": "SpineBA/NP0142_spr.skel"
+    },
+    {
+        "name": "NP0143_spr",
+        "url": "SpineBA/NP0143_spr.skel"
+    },
+    {
+        "name": "NP0147_spr",
+        "url": "SpineBA/NP0147_spr.skel"
+    },
+    {
+        "name": "NP0148_spr",
+        "url": "SpineBA/NP0148_spr.skel"
+    },
+    {
+        "name": "NP0149_spr",
+        "url": "SpineBA/NP0149_spr.skel"
+    },
+    {
+        "name": "NP0150_spr",
+        "url": "SpineBA/NP0150_spr.skel"
+    },
+    {
+        "name": "NP0151_spr",
+        "url": "SpineBA/NP0151_spr.skel"
+    },
+    {
+        "name": "NP0152_spr",
+        "url": "SpineBA/NP0152_spr.skel"
+    },
+    {
+        "name": "NP0156_spr",
+        "url": "SpineBA/NP0156_spr.skel"
+    },
+    {
+        "name": "NP0157_spr",
+        "url": "SpineBA/NP0157_spr.skel"
+    },
+    {
+        "name": "NP0158_spr",
+        "url": "SpineBA/NP0158_spr.skel"
+    },
+    {
+        "name": "NP0159_spr",
+        "url": "SpineBA/NP0159_spr.skel"
+    },
+    {
+        "name": "NP0160_spr",
+        "url": "SpineBA/NP0160_spr.skel"
+    },
+    {
+        "name": "NP0161_spr",
+        "url": "SpineBA/NP0161_spr.skel"
+    },
+    {
+        "name": "NP0162_spr",
+        "url": "SpineBA/NP0162_spr.skel"
+    },
+    {
+        "name": "NP0163_spr",
+        "url": "SpineBA/NP0163_spr.skel"
+    },
+    {
+        "name": "NP0164_spr",
+        "url": "SpineBA/NP0164_spr.skel"
+    },
+    {
+        "name": "NP0165_spr",
+        "url": "SpineBA/NP0165_spr.skel"
+    },
+    {
+        "name": "NP0166_spr",
+        "url": "SpineBA/NP0166_spr.skel"
+    },
+    {
+        "name": "NP0167_spr",
+        "url": "SpineBA/NP0167_spr.skel"
+    },
+    {
+        "name": "NP0168_spr",
+        "url": "SpineBA/NP0168_spr.skel"
+    },
+    {
+        "name": "NP0169_spr",
+        "url": "SpineBA/NP0169_spr.skel"
+    },
+    {
+        "name": "NP0170_spr",
+        "url": "SpineBA/NP0170_spr.skel"
+    },
+    {
+        "name": "NP0171_spr",
+        "url": "SpineBA/NP0171_spr.skel"
+    },
+    {
+        "name": "NP0172_spr",
+        "url": "SpineBA/NP0172_spr.skel"
+    },
+    {
+        "name": "NP0173_spr",
+        "url": "SpineBA/NP0173_spr.skel"
+    },
+    {
+        "name": "NP0174_spr",
+        "url": "SpineBA/NP0174_spr.skel"
+    },
+    {
+        "name": "NP0175_spr",
+        "url": "SpineBA/NP0175_spr.skel"
+    },
+    {
+        "name": "NP0176_spr",
+        "url": "SpineBA/NP0176_spr.skel"
+    },
+    {
+        "name": "NP0177_spr",
+        "url": "SpineBA/NP0177_spr.skel"
+    },
+    {
+        "name": "NP0178_spr",
+        "url": "SpineBA/NP0178_spr.skel"
+    },
+    {
+        "name": "NP0179_spr",
+        "url": "SpineBA/NP0179_spr.skel"
+    },
+    {
+        "name": "NP0180_spr",
+        "url": "SpineBA/NP0180_spr.skel"
+    },
+    {
+        "name": "NP0181_spr",
+        "url": "SpineBA/NP0181_spr.skel"
+    },
+    {
+        "name": "NP0182_spr",
+        "url": "SpineBA/NP0182_spr.skel"
+    },
+    {
+        "name": "NP0186_spr",
+        "url": "SpineBA/NP0186_spr.skel"
+    },
+    {
+        "name": "NP0187_spr",
+        "url": "SpineBA/NP0187_spr.skel"
+    },
+    {
+        "name": "NP0188_spr",
+        "url": "SpineBA/NP0188_spr.skel"
+    },
+    {
+        "name": "NP0189_spr",
+        "url": "SpineBA/NP0189_spr.skel"
+    },
+    {
+        "name": "NP0190_spr",
+        "url": "SpineBA/NP0190_spr.skel"
+    },
+    {
+        "name": "NP0195_spr",
+        "url": "SpineBA/NP0195_spr.skel"
+    },
+    {
+        "name": "NP0196_spr",
+        "url": "SpineBA/NP0196_spr.skel"
+    },
+    {
+        "name": "NP0197_spr",
+        "url": "SpineBA/NP0197_spr.skel"
+    },
+    {
+        "name": "NP0198_spr",
+        "url": "SpineBA/NP0198_spr.skel"
+    },
+    {
+        "name": "NP0200_spr",
+        "url": "SpineBA/NP0200_spr.skel"
+    },
+    {
+        "name": "NP0201_spr",
+        "url": "SpineBA/NP0201_spr.skel"
+    },
+    {
+        "name": "NP0202_spr",
+        "url": "SpineBA/NP0202_spr.skel"
+    },
+    {
+        "name": "NP0204_spr",
+        "url": "SpineBA/NP0204_spr.skel"
+    },
+    {
+        "name": "NP0205_spr",
+        "url": "SpineBA/NP0205_spr.skel"
+    },
+    {
+        "name": "peroro_spr",
+        "url": "SpineBA/peroro_spr.skel"
+    },
+    {
+        "name": "Pina_home",
+        "url": "SpineBA/Pina_home.skel"
+    },
+    {
+        "name": "pina_spr",
+        "url": "SpineBA/pina_spr.skel"
+    },
+    {
+        "name": "pmcdirector_spr",
+        "url": "SpineBA/pmcdirector_spr.skel"
+    },
+    {
+        "name": "Police_Valkyrie_SG_spr",
+        "url": "SpineBA/Police_Valkyrie_SG_spr.skel"
+    },
+    {
+        "name": "reizyo_spr",
+        "url": "SpineBA/reizyo_spr.skel"
+    },
+    {
+        "name": "Rin_raiddungeon",
+        "url": "SpineBA/Rin_raiddungeon.skel"
+    },
+    {
+        "name": "rin_spr",
+        "url": "SpineBA/rin_spr.skel"
+    },
+    {
+        "name": "robot2_division_spr",
+        "url": "SpineBA/robot2_division_spr.skel"
+    },
+    {
+        "name": "royalguard_redwinter1_spr",
+        "url": "SpineBA/royalguard_redwinter1_spr.skel"
+    },
+    {
+        "name": "Sakurako_home",
+        "url": "SpineBA/Sakurako_home.skel"
+    },
+    {
+        "name": "sakurako_spr",
+        "url": "SpineBA/sakurako_spr.skel"
+    },
+    {
+        "name": "Saori_home",
+        "url": "SpineBA/Saori_home.skel"
+    },
+    {
+        "name": "saori_spr",
+        "url": "SpineBA/saori_spr.skel"
+    },
+    {
+        "name": "Saya_casual_home",
+        "url": "SpineBA/Saya_casual_home.skel"
+    },
+    {
+        "name": "saya_casual_spr",
+        "url": "SpineBA/saya_casual_spr.skel"
+    },
+    {
+        "name": "Saya_home",
+        "url": "SpineBA/Saya_home.skel"
+    },
+    {
+        "name": "saya_spr",
+        "url": "SpineBA/saya_spr.skel"
+    },
+    {
+        "name": "SC51000_01",
+        "url": "SpineBA/SC51000_01.skel"
+    },
+    {
+        "name": "SC51000_02",
+        "url": "SpineBA/SC51000_02.skel"
+    },
+    {
+        "name": "schoolGirl01_SukebanSwim_SMG_spr",
+        "url": "SpineBA/schoolGirl01_SukebanSwim_SMG_spr.skel"
+    },
+    {
+        "name": "schoolGirl02_SukebanSwim_MG_spr",
+        "url": "SpineBA/schoolGirl02_SukebanSwim_MG_spr.skel"
+    },
+    {
+        "name": "sena_spr",
+        "url": "SpineBA/sena_spr.skel"
+    },
+    {
+        "name": "Serika_home",
+        "url": "SpineBA/Serika_home.skel"
+    },
+    {
+        "name": "Serika_Newyear_home",
+        "url": "SpineBA/Serika_Newyear_home.skel"
+    },
+    {
+        "name": "serika_newyear_spr",
+        "url": "SpineBA/serika_newyear_spr.skel"
+    },
+    {
+        "name": "serika_robber_spr",
+        "url": "SpineBA/serika_robber_spr.skel"
+    },
+    {
+        "name": "serika_shibaseki_spr",
+        "url": "SpineBA/serika_shibaseki_spr.skel"
+    },
+    {
+        "name": "serika_spr",
+        "url": "SpineBA/serika_spr.skel"
+    },
+    {
+        "name": "serina_home",
+        "url": "SpineBA/serina_home.skel"
+    },
+    {
+        "name": "serina_spr",
+        "url": "SpineBA/serina_spr.skel"
+    },
+    {
+        "name": "shibasekimaster_spr",
+        "url": "SpineBA/shibasekimaster_spr.skel"
+    },
+    {
+        "name": "Shigure_00",
+        "url": "SpineBA/Shigure_00.skel"
+    },
+    {
+        "name": "Shigure_01",
+        "url": "SpineBA/Shigure_01.skel"
+    },
+    {
+        "name": "Shigure_home",
+        "url": "SpineBA/Shigure_home.skel"
+    },
+    {
+        "name": "shigure_spr",
+        "url": "SpineBA/shigure_spr.skel"
+    },
+    {
+        "name": "Shimiko_home",
+        "url": "SpineBA/Shimiko_home.skel"
+    },
+    {
+        "name": "shimiko_spr",
+        "url": "SpineBA/shimiko_spr.skel"
+    },
+    {
+        "name": "shinon_spr",
+        "url": "SpineBA/shinon_spr.skel"
+    },
+    {
+        "name": "Shiroko_home",
+        "url": "SpineBA/Shiroko_home.skel"
+    },
+    {
+        "name": "Shiroko_ridingsuit_home",
+        "url": "SpineBA/Shiroko_ridingsuit_home.skel"
+    },
+    {
+        "name": "shiroko_ridingsuit_spr",
+        "url": "SpineBA/shiroko_ridingsuit_spr.skel"
+    },
+    {
+        "name": "shiroko_robber_spr",
+        "url": "SpineBA/shiroko_robber_spr.skel"
+    },
+    {
+        "name": "shiroko_spr",
+        "url": "SpineBA/shiroko_spr.skel"
+    },
+    {
+        "name": "Shizuko_home",
+        "url": "SpineBA/Shizuko_home.skel"
+    },
+    {
+        "name": "shizuko_spr",
+        "url": "SpineBA/shizuko_spr.skel"
+    },
+    {
+        "name": "Shun_home",
+        "url": "SpineBA/Shun_home.skel"
+    },
+    {
+        "name": "shun_spr",
+        "url": "SpineBA/shun_spr.skel"
+    },
+    {
+        "name": "Soldier_OnsenDev_RL_spr",
+        "url": "SpineBA/Soldier_OnsenDev_RL_spr.skel"
+    },
+    {
+        "name": "sora_shop",
+        "url": "SpineBA/sora_shop.skel"
+    },
+    {
+        "name": "sora_spr",
+        "url": "SpineBA/sora_spr.skel"
+    },
+    {
+        "name": "sukeban_HMG_spr",
+        "url": "SpineBA/sukeban_HMG_spr.skel"
+    },
+    {
+        "name": "sukeban_SMG_spr",
+        "url": "SpineBA/sukeban_SMG_spr.skel"
+    },
+    {
+        "name": "sukeban_SR_spr",
+        "url": "SpineBA/sukeban_SR_spr.skel"
+    },
+    {
+        "name": "Sumire_home",
+        "url": "SpineBA/Sumire_home.skel"
+    },
+    {
+        "name": "sumire_spr",
+        "url": "SpineBA/sumire_spr.skel"
+    },
+    {
+        "name": "Suzumi_home",
+        "url": "SpineBA/Suzumi_home.skel"
+    },
+    {
+        "name": "suzumi_spr",
+        "url": "SpineBA/suzumi_spr.skel"
+    },
+    {
+        "name": "Tomoe_home",
+        "url": "SpineBA/Tomoe_home.skel"
+    },
+    {
+        "name": "tomoe_spr",
+        "url": "SpineBA/tomoe_spr.skel"
+    },
+    {
+        "name": "Tsubaki_home",
+        "url": "SpineBA/Tsubaki_home.skel"
+    },
+    {
+        "name": "Tsubaki_spr",
+        "url": "SpineBA/Tsubaki_spr.skel"
+    },
+    {
+        "name": "Tsurugi_home",
+        "url": "SpineBA/Tsurugi_home.skel"
+    },
+    {
+        "name": "tsurugi_spr",
+        "url": "SpineBA/tsurugi_spr.skel"
+    },
+    {
+        "name": "Ui_RaidBoss_Binah",
+        "url": "SpineBA/Ui_RaidBoss_Binah.skel"
+    },
+    {
+        "name": "Ui_RaidBoss_EN0005",
+        "url": "SpineBA/Ui_RaidBoss_EN0005.skel"
+    },
+    {
+        "name": "Ui_RaidBoss_Goz",
+        "url": "SpineBA/Ui_RaidBoss_Goz.skel"
+    },
+    {
+        "name": "Ui_RaidBoss_Hieronymus",
+        "url": "SpineBA/Ui_RaidBoss_Hieronymus.skel"
+    },
+    {
+        "name": "Ui_RaidBoss_Hod",
+        "url": "SpineBA/Ui_RaidBoss_Hod.skel"
+    },
+    {
+        "name": "Ui_RaidBoss_HoverCraft",
+        "url": "SpineBA/Ui_RaidBoss_HoverCraft.skel"
+    },
+    {
+        "name": "Ui_RaidBoss_Kaitenger",
+        "url": "SpineBA/Ui_RaidBoss_Kaitenger.skel"
+    },
+    {
+        "name": "Ui_RaidBoss_Perorozilla",
+        "url": "SpineBA/Ui_RaidBoss_Perorozilla.skel"
+    },
+    {
+        "name": "Ui_RaidBoss_ShiroKuro",
+        "url": "SpineBA/Ui_RaidBoss_ShiroKuro.skel"
+    },
+    {
+        "name": "UI_Spine_Collection_803",
+        "url": "SpineBA/UI_Spine_Collection_803.skel"
+    },
+    {
+        "name": "utahaturret_spr",
+        "url": "SpineBA/utahaturret_spr.skel"
+    },
+    {
+        "name": "Utaha_home",
+        "url": "SpineBA/Utaha_home.skel"
+    },
+    {
+        "name": "utaha_spr",
+        "url": "SpineBA/utaha_spr.skel"
+    },
+    {
+        "name": "Wakamo_home",
+        "url": "SpineBA/Wakamo_home.skel"
+    },
+    {
+        "name": "wakamo_mask_spr",
+        "url": "SpineBA/wakamo_mask_spr.skel"
+    },
+    {
+        "name": "Wakamo_Scene_0",
+        "url": "SpineBA/Wakamo_Scene_0.skel"
+    },
+    {
+        "name": "wakamo_spr",
+        "url": "SpineBA/wakamo_spr.skel"
+    },
+    {
+        "name": "yoheki_normal1_spr",
+        "url": "SpineBA/yoheki_normal1_spr.skel"
+    },
+    {
+        "name": "yoheki_redwinter1_spr",
+        "url": "SpineBA/yoheki_redwinter1_spr.skel"
+    },
+    {
+        "name": "Yoshimi_home",
+        "url": "SpineBA/Yoshimi_home.skel"
+    },
+    {
+        "name": "yoshimi_spr",
+        "url": "SpineBA/yoshimi_spr.skel"
+    },
+    {
+        "name": "Yukata_StreetGhostes_MG_spr",
+        "url": "SpineBA/Yukata_StreetGhostes_MG_spr.skel"
+    },
+    {
+        "name": "Yukata_StreetGhostes_RL_spr",
+        "url": "SpineBA/Yukata_StreetGhostes_RL_spr.skel"
+    },
+    {
+        "name": "Yustina_SR1_spr",
+        "url": "SpineBA/Yustina_SR1_spr.skel"
+    },
+    {
+        "name": "Yuuka_home",
+        "url": "SpineBA/Yuuka_home.skel"
+    },
+    {
+        "name": "yuuka_spr",
+        "url": "SpineBA/yuuka_spr.skel"
+    },
+    {
+        "name": "yuzu_bg",
+        "url": "SpineBA/yuzu_bg.skel"
+    },
+    {
+        "name": "Yuzu_home",
+        "url": "SpineBA/Yuzu_home.skel"
+    },
+    {
+        "name": "yuzu_spr",
+        "url": "SpineBA/yuzu_spr.skel"
+    },
+    {
+        "name": "Zunko_home",
+        "url": "SpineBA/Zunko_home.skel"
+    },
+    {
+        "name": "zunko_spr",
+        "url": "SpineBA/zunko_spr.skel"
+    }
+]
