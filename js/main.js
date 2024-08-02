@@ -61,20 +61,54 @@ document.addEventListener('DOMContentLoaded', () => {
         setLanguage(event.target.value);
     });
 
+    let currentSelectedItem = null;
+
     fetch('./data/models.json')
         .then(response => response.json())
         .then(models => {
-            console.log('Models loaded:', models);
             const modelList = document.getElementById('modelList');
-            models.forEach(model => {
-                const listItem = document.createElement('li');
-                listItem.classList.add('list-group-item');
-                listItem.textContent = model.name;
-                listItem.addEventListener('click', () => loadModel(model.url));
-                modelList.appendChild(listItem);
-            });
+            modelList.innerHTML = '';
+
+            const modelItems = models.map(model => ({
+                element: createListItem(model.name, model.url),
+                originalName: model.name
+            }));
+
+            fetch('./data/PathNames.json')
+                .then(response => response.json())
+                .then(nameMappings => {
+                    nameMappings.forEach(mapping => {
+                        const devName = mapping.DevName;
+                        const pathName = mapping.PathName;
+
+                        modelItems.forEach(item => {
+                            if (item.originalName.includes(devName)) {
+                                item.element.textContent = item.originalName.replace(devName, pathName);
+                            }
+                        });
+                    });
+
+                    modelItems.sort((a, b) => a.element.textContent.localeCompare(b.element.textContent));
+                    modelItems.forEach(item => modelList.appendChild(item.element));
+                })
+                .catch(error => console.error('Error fetching name mappings:', error));
         })
-        .catch(error => console.error('Error al cargar el archivo JSON:', error));
+        .catch(error => console.error('Error fetching models:', error));
+
+    function createListItem(name, url) {
+        const listItem = document.createElement('li');
+        listItem.classList.add('list-group-item');
+        listItem.textContent = name;
+        listItem.addEventListener('click', () => {
+            if (currentSelectedItem) {
+                currentSelectedItem.classList.remove('active');
+            }
+            listItem.classList.add('active');
+            currentSelectedItem = listItem;
+            loadModel(url);
+        });
+        return listItem;
+    }
 
     const app = new PIXI.Application({
         view: document.getElementById('stage'),
@@ -93,14 +127,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let loopAnimation = true;
 
     function loadModel(url) {
-        console.log('Loading model from URL:', url);
         spineModelUrl = url;
         app.stage.removeChildren();
         PIXI.Loader.shared
             .reset()
             .add('spineModel', url, { crossOrigin: true })
             .load((loader, resources) => {
-                console.log('Model loaded:', resources);
                 if (resources.spineModel && resources.spineModel.spineData) {
                     const spineData = resources.spineModel.spineData;
                     spineModel = new PIXI.spine.Spine(spineData);
@@ -118,14 +150,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     loadAnimationButtons(spineData.animations);
                     loadSkinOptions(spineData.skins);
-                } else {
-                    console.error('Error loading spine model data:', resources);
                 }
             });
     }
 
     function resizeModel(model) {
-        console.log('Resizing model:', model);
         const canvasWidth = app.renderer.width;
         const canvasHeight = app.renderer.height;
         const modelWidth = model.width;
@@ -199,7 +228,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Función para exportar la animación como video
     function exportAnimationAsVideo(FPS = 60) {
         const exportWidth = parseInt(document.getElementById('exportWidth').value) || app.renderer.width;
         const exportHeight = parseInt(document.getElementById('exportHeight').value) || app.renderer.height;
@@ -251,8 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 appExport.stage.addChild(exportChar);
 
-                // Export Section
-                let videoStream = exportCanvas.captureStream(FPS); //default to 60
+                let videoStream = exportCanvas.captureStream(FPS);
                 let mediaRecorder = new MediaRecorder(videoStream, { mimeType: exportFormat, videoBitsPerSecond: exportBitrate });
 
                 let chunks = [];

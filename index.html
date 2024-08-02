@@ -23,13 +23,20 @@
         .sidebar ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
         .sidebar ul li {
             padding: 10px;
             cursor: pointer;
+            color: #000000;
         }
         .sidebar ul li:hover {
             background: #555;
+            color: white;
+        }
+        .sidebar ul li.active {
+            background: #000000;
+            color: #ffffff;
         }
         .content {
             flex-grow: 1;
@@ -86,7 +93,7 @@
     <div class="d-flex justify-content-center">
         <h2 id="modelHeader">Modelos</h2>
     </div>
-    <ul id="modelList"></ul>
+    <ul id="modelList" class="list-group"></ul>
 </div>
 <div class="content">
     <canvas id="stage"></canvas>
@@ -121,12 +128,9 @@
         <div class="d-flex justify-content-center">
             <a href="https://rafamr14.github.io/index.html"><img src="./img/ggzicon.webp" alt="Honkai Gakuen 2 Live2D/Spine" style="width: 64px"></a>
         </div>
-
     </div>
 </div>
 
-
-<!-- Modal para exportar animación -->
 <div class="modal fade" id="exportModal" tabindex="-1" aria-labelledby="exportModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
