@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         es: {
             models: "Modelos",
-            selectSkin: "Seleccionar Piel",
+            selectSkin: "Seleccionar Skin",
             animations: "Animaciones",
             scaleModel: "Escalar Modelo",
             exportAnimation: "Exportar Animación",
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             width: "Ancho:",
             height: "Alto:",
             bitrate: "Bitrate (Mbps):",
-            duration: "Duración (segundos):",
+            duración: "Duración (segundos):",
             format: "Formato:"
         }
     };
@@ -171,6 +171,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     loadAnimationButtons(spineData.animations);
                     loadSkinOptions(spineData.skins);
+
+                    // Reproducir audio automáticamente al cargar el modelo
+                    playInitialAudio(originalModelName);
                 }
             });
     }
@@ -219,6 +222,53 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    const animationAudioMap = {
+        "Talk_01_A": [
+            "MemorialLobby_1_1.ogg",
+            "MemorialLobby_1_2.ogg",
+            "MemorialLobby_1_3.ogg",
+            "MemorialLobby_1_4.ogg",
+            "MemorialLobby_1.ogg"
+        ],
+        "Talk_02_A": [
+            "MemorialLobby_2_1.ogg",
+            "MemorialLobby_2_2.ogg",
+            "MemorialLobby_2_3.ogg",
+            "MemorialLobby_2_4.ogg",
+            "MemorialLobby_2.ogg"
+        ],
+        "Talk_03_A": [
+            "MemorialLobby_3_1.ogg",
+            "MemorialLobby_3_2.ogg",
+            "MemorialLobby_3_3.ogg",
+            "MemorialLobby_3_4.ogg",
+            "MemorialLobby_3.ogg"
+        ],
+        "Talk_04_A": [
+            "MemorialLobby_4_1.ogg",
+            "MemorialLobby_4_2.ogg",
+            "MemorialLobby_4_3.ogg",
+            "MemorialLobby_4_4.ogg",
+            "MemorialLobby_4_5.ogg",
+            "MemorialLobby_4_6.ogg",
+            "MemorialLobby_4.ogg"
+        ],
+        "Talk_05_A": [
+            "MemorialLobby_5_1.ogg",
+            "MemorialLobby_5_2.ogg",
+            "MemorialLobby_5_3.ogg",
+            "MemorialLobby_5_4.ogg",
+            "MemorialLobby_5.ogg"
+        ],
+        "Talk_06_A": [
+            "MemorialLobby_6_1.ogg",
+            "MemorialLobby_6_2.ogg",
+            "MemorialLobby_6_3.ogg",
+            "MemorialLobby_6_4.ogg",
+            "MemorialLobby_6.ogg"
+        ],
+    };
+
     function loadAnimationButtons(animations) {
         const animationButtonsContainer = document.getElementById('animationButtons');
         animationButtonsContainer.innerHTML = '';
@@ -232,47 +282,79 @@ document.addEventListener('DOMContentLoaded', () => {
                 const isLooping = document.getElementById('loopCheckbox').checked;
                 spineModel.state.setAnimation(0, animation.name, isLooping);
 
-                // Si el botón de animación contiene 'Talk_01_A'
-                if (animationId.includes('Talk_01_A')) {
-                    const modelName = originalModelName.split('_')[0]; // Obtener el nombre del modelo
-                    const firstAudio = new Audio(`./audio/${modelName}_MemorialLobby_1_1.ogg`);
-                    const secondAudio = new Audio(`./audio/${modelName}_MemorialLobby_1_2.ogg`);
+                playAnimationAudio(animation.name);
 
-                    firstAudio.play();
-
-                    firstAudio.addEventListener('ended', () => {
-                        setTimeout(() => {
-                            secondAudio.play();
-                        }, 1000); // 1000 ms = 1 segundo
-                    });
-                } else if (animationId.includes('Talk_02_A')) {
-                    const modelName = originalModelName.split('_')[0]; // Obtener el nombre del modelo
-                    const firstAudio = new Audio(`./audio/${modelName}_MemorialLobby_2_1.ogg`);
-                    const secondAudio = new Audio(`./audio/${modelName}_MemorialLobby_2_2.ogg`);
-
-                    firstAudio.play();
-
-                    firstAudio.addEventListener('ended', () => {
-                        setTimeout(() => {
-                            secondAudio.play();
-                        }, 1000); // 1000 ms = 1 segundo
-                    });
-                } else if (animationId.includes('Talk_03_A')) {
-                    const modelName = originalModelName.split('_')[0]; // Obtener el nombre del modelo
-                    const firstAudio = new Audio(`./audio/${modelName}_MemorialLobby_3_1.ogg`);
-                    const secondAudio = new Audio(`./audio/${modelName}_MemorialLobby_3_2.ogg`);
-
-                    firstAudio.play();
-
-                    firstAudio.addEventListener('ended', () => {
-                        setTimeout(() => {
-                            secondAudio.play();
-                        }, 1000); // 1000 ms = 1 segundo
-                    });
-                }
+                displayDialogForAnimation(originalModelName, animation.name);
             });
             animationButtonsContainer.appendChild(button);
         });
+    }
+
+    function playAnimationAudio(animationName) {
+        const modelName = originalModelName.split('_')[0];
+        const audioFiles = animationAudioMap[animationName];
+
+        if (audioFiles && audioFiles.length > 0) {
+            const audios = audioFiles.map(file => new Audio(`./audio/${modelName}_${file}`));
+            playAudiosSequentially(audios);
+        }
+    }
+
+    function playInitialAudio(modelName) {
+        const baseName = modelName.split('_')[0];
+        const audioFiles = [
+            `./audio/${baseName}_MemorialLobby_0.ogg`,
+            `./audio/${baseName}_MemorialLobby_0_1.ogg`,
+            `./audio/${baseName}_MemorialLobby_0_2.ogg`,
+            `./audio/${baseName}_MemorialLobby_0_3.ogg`
+        ];
+        const audios = audioFiles.map(file => new Audio(file));
+        setTimeout(() => {
+            playAudiosSequentially(audios);
+        }, 3000); // 1000 ms = 1 segundo de retraso
+    }
+
+    function playAudiosSequentially(audios) {
+        if (audios.length === 0) return;
+
+        const [firstAudio, ...rest] = audios;
+
+        firstAudio.play().catch(() => {
+            if (rest.length > 0) {
+                playAudiosSequentially(rest);
+            }
+        });
+
+        firstAudio.addEventListener('ended', () => {
+            if (rest.length > 0) {
+                setTimeout(() => {
+                    playAudiosSequentially(rest);
+                }, 1000); // 1000 ms = 1 segundo de retraso
+            }
+        });
+    }
+
+    function displayDialogForAnimation(modelName, animationName) {
+        fetch('./data/characterDialogs.json')
+            .then(response => response.json())
+            .then(dialogs => {
+                const dialog = dialogs.find(d => d.Name === modelName && d.AnimationName === animationName);
+                if (dialog) {
+                    showDialog(dialog.LocalizeEN, dialog.Duration);
+                }
+            })
+            .catch(error => console.error('Error fetching dialog data:', error));
+    }
+
+    function showDialog(text, duration) {
+        const dialogElement = document.createElement('div');
+        dialogElement.classList.add('dialog-box');
+        dialogElement.textContent = text;
+        document.body.appendChild(dialogElement);
+
+        setTimeout(() => {
+            dialogElement.remove();
+        }, duration);
     }
 
     function loadSkinOptions(skins) {

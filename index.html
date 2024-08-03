@@ -86,6 +86,21 @@
         .language-selector {
             margin-top: 10px;
         }
+        .dialog-box {
+            position: absolute; /* Cambia de absolute a fixed para que esté siempre en la misma posición relativa a la ventana del navegador */
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            z-index: 9999; /* Asegúrate de que este valor sea alto para que esté encima de otros elementos */
+            pointer-events: none; /* Esto asegura que no interfiera con la interacción del usuario con otros elementos */
+        }
+
+
     </style>
 </head>
 <body>
@@ -96,6 +111,7 @@
     <ul id="modelList" class="list-group"></ul>
 </div>
 <div class="content">
+
     <canvas id="stage"></canvas>
 </div>
 <div class="right-sidebar d-flex flex-column">
