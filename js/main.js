@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('label[for="exportWidth"]').textContent = translations[language].width;
         document.querySelector('label[for="exportHeight"]').textContent = translations[language].height;
         document.querySelector('label[for="exportBitrate"]').textContent = translations[language].bitrate;
-        document.querySelector('label[for="exportDuration"]').textContent = translations[language].duration;
         document.querySelector('label[for="exportFormat"]').textContent = translations[language].format;
     }
 
@@ -67,31 +66,27 @@ document.addEventListener('DOMContentLoaded', () => {
     Promise.all([
         fetch('./data/models.json').then(response => response.json()),
         fetch('./data/PathNames.json').then(response => response.json())
-    ])
-        .then(([models, nameMappings]) => {
-            const modelList = document.getElementById('modelList');
-            modelList.innerHTML = '';
+    ]).then(([models, nameMappings]) => {
+        const modelList = document.getElementById('modelList');
+        modelList.innerHTML = '';
 
-            const modelItems = models.map(model => {
-                const mapping = nameMappings.find(m => model.name.includes(m.DevName));
-                const newName = mapping ? model.name.replace(mapping.DevName, mapping.PathName) : model.name;
-                const audioName = model.Audio || (mapping ? mapping.Audio || mapping.DevName : model.name.split('_')[0]);
+        const modelItems = models.map(model => {
+            const mapping = nameMappings.find(m => model.name.includes(m.DevName));
+            const newName = mapping ? model.name.replace(mapping.DevName, mapping.PathName) : model.name;
+            const audioName = model.Audio || (mapping ? mapping.Audio || mapping.DevName : model.name.split('_')[0]);
 
-                return {
-                    element: createListItem(newName, model.url, audioName),
-                    originalName: model.name,
-                    newName: newName,
-                    audioName: audioName
-                };
-            });
+            return {
+                element: createListItem(newName, model.url, audioName),
+                originalName: model.name,
+                newName: newName,
+                audioName: audioName
+            };
+        });
 
-            // Ordenar los elementos por el nuevo nombre
-            modelItems.sort((a, b) => a.newName.localeCompare(b.newName));
+        modelItems.sort((a, b) => a.newName.localeCompare(b.newName));
 
-            // Añadir los elementos ordenados al DOM
-            modelItems.forEach(item => modelList.appendChild(item.element));
-        })
-        .catch(error => console.error('Error fetching data:', error));
+        modelItems.forEach(item => modelList.appendChild(item.element));
+    }).catch(error => console.error('Error fetching data:', error));
 
     function createListItem(name, url, audioName) {
         const listItem = document.createElement('li');
@@ -103,9 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             listItem.classList.add('active');
             currentSelectedItem = listItem;
-            currentModel = listItem.textContent; // Store the current model name
-            originalModelName = name; // Store the original model name
-            modelAudioName = audioName; // Store the model audio name
+            currentModel = listItem.textContent;
+            originalModelName = name;
+            modelAudioName = audioName;
             loadModel(url);
         });
         return listItem;
@@ -113,8 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const app = new PIXI.Application({
         view: document.getElementById('stage'),
-        width: window.innerWidth - 500,
-        height: window.innerHeight,
+        resizeTo: window,
         backgroundColor: 0x1099bb,
         antialias: true,
         resolution: window.devicePixelRatio || 1,
@@ -127,47 +121,54 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastPosition = { x: 0, y: 0 };
     let loopAnimation = true;
 
+    window.addEventListener('resize', () => {
+        app.renderer.resize(window.innerWidth, window.innerHeight);
+        if (spineModel) {
+            resizeModel(spineModel);
+        }
+    });
+
     function loadModel(url) {
         spineModelUrl = url;
         app.stage.removeChildren();
-        PIXI.Loader.shared
-            .reset()
-            .add('spineModel', url, { crossOrigin: true })
-            .load((loader, resources) => {
-                if (resources.spineModel && resources.spineModel.spineData) {
-                    const spineData = resources.spineModel.spineData;
-                    spineModel = new PIXI.spine.Spine(spineData);
-                    resizeModel(spineModel);
-                    app.stage.addChild(spineModel);
+        PIXI.utils.clearTextureCache();
 
-                    if (originalModelName.endsWith('_home') || currentModel.endsWith('_home')) {
-                        spineModel.state.setAnimation(0, 'Start_Idle_01', false);
-                        spineModel.state.addListener({
-                            complete: (track) => {
-                                if (track.animation.name === 'Start_Idle_01') {
-                                    spineModel.state.setAnimation(0, 'Idle_01', true);
-                                }
+        PIXI.Loader.shared.reset().add('spineModel', url, { crossOrigin: true }).load((loader, resources) => {
+            if (resources.spineModel && resources.spineModel.spineData) {
+                const spineData = resources.spineModel.spineData;
+                spineModel = new PIXI.spine.Spine(spineData);
+                resizeModel(spineModel);
+                app.stage.addChild(spineModel);
+
+                if (originalModelName.endsWith('_home') || currentModel.endsWith('_home')) {
+                    spineModel.state.setAnimation(0, 'Start_Idle_01', false);
+                    spineModel.state.addListener({
+                        complete: (track) => {
+                            if (track.animation.name === 'Start_Idle_01') {
+                                spineModel.state.setAnimation(0, 'Idle_01', true);
                             }
-                        });
-                    } else {
-                        spineModel.state.setAnimation(0, 'Idle_01', loopAnimation);
-                    }
-
-                    spineModel.interactive = true;
-                    spineModel.buttonMode = true;
-
-                    spineModel.on('pointerdown', onDragStart)
-                        .on('pointerup', onDragEnd)
-                        .on('pointerupoutside', onDragEnd)
-                        .on('pointermove', onDragMove);
-
-                    loadAnimationButtons(spineData.animations);
-                    loadSkinOptions(spineData.skins);
-
-                    // Reproducir audio automáticamente al cargar el modelo
-                    setTimeout(() => playInitialAudio(modelAudioName || originalModelName), 1000); // 1000 ms = 1 segundo de retraso
+                        }
+                    });
+                } else {
+                    spineModel.state.setAnimation(0, 'Idle_01', loopAnimation);
                 }
-            });
+
+                spineModel.interactive = true;
+                spineModel.buttonMode = true;
+
+                spineModel.on('pointerdown', onDragStart)
+                    .on('pointerup', onDragEnd)
+                    .on('pointerupoutside', onDragEnd)
+                    .on('pointermove', onDragMove);
+
+                loadAnimationButtons(spineData.animations);
+                loadSkinOptions(spineData.skins);
+
+                populateAnimationSelect();
+
+                setTimeout(() => playInitialAudio(modelAudioName || originalModelName), 1000);
+            }
+        });
     }
 
     function resizeModel(model) {
@@ -176,14 +177,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const modelWidth = model.width;
         const modelHeight = model.height;
 
-        const scaleX = canvasWidth / modelWidth;
-        const scaleY = canvasHeight / modelHeight;
-        const scale = Math.min(scaleX, scaleY);
+        const scale = canvasWidth / modelWidth;
 
         model.scale.set(scale);
-
-        model.x = (canvasWidth - modelWidth * scale) / 2 + 600;
-        model.y = (canvasHeight - modelHeight * scale) / 2 + 1230;
+        model.x = (canvasWidth - modelWidth * scale) + 1260;
+        model.y = canvasHeight - 100;
     }
 
     function onDragStart(event) {
@@ -290,17 +288,15 @@ document.addEventListener('DOMContentLoaded', () => {
         ];
         const audios = audioFiles.map(file => new Audio(file));
 
-        // Configurar retrasos personalizados para ciertos modelos
-        let delay = 2000; // Retraso predeterminado de 2 segundos
+        let delay = 2000;
 
         if (modelName === "CH0064") {
-            delay = 5000; // 3 segundos de retraso para ModeloA
+            delay = 5000;
         } else if (modelName === "Azusa_home") {
-            delay = 2000; // 1 segundo de retraso para ModeloB
+            delay = 2000;
         } else if (modelName === "Aru_home") {
-            delay = 2000; // 1 segundo de retraso para ModeloB
+            delay = 2000;
         }
-        // Agrega más condiciones según sea necesario
 
         setTimeout(() => {
             playAudiosSequentially(audios);
@@ -322,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (rest.length > 0) {
                 setTimeout(() => {
                     playAudiosSequentially(rest);
-                }, 1000); // 1000 ms = 1 segundo de retraso
+                }, 1000);
             }
         });
     }
@@ -367,11 +363,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function exportAnimationAsVideo(FPS = 60) {
+        console.log("Exportar animación iniciado");
+
         const exportWidth = parseInt(document.getElementById('exportWidth').value) || app.renderer.width;
         const exportHeight = parseInt(document.getElementById('exportHeight').value) || app.renderer.height;
         const exportBitrate = parseInt(document.getElementById('exportBitrate').value) * 1000000 || 5000000;
-        const exportDuration = parseInt(document.getElementById('exportDuration').value) || null;
+        const exportAnimation = document.getElementById('exportAnimation').value;
         const exportFormat = document.getElementById('exportFormat').value || 'video/webm';
+
+        console.log("Parámetros de exportación:", { exportWidth, exportHeight, exportBitrate, exportAnimation, exportFormat });
 
         if (!spineModelUrl) {
             alert('No hay un modelo cargado.');
@@ -384,6 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
         exportCanvas.width = exportWidth;
         exportCanvas.height = exportHeight;
         document.body.appendChild(exportCanvas);
+
         let exportVideo = document.createElement("video");
         exportVideo.controls = true;
         exportVideo.id = "export-video";
@@ -394,30 +395,24 @@ document.addEventListener('DOMContentLoaded', () => {
             view: exportCanvas,
         });
 
+        appExport.loader.reset();
+        PIXI.utils.clearTextureCache();
+
         appExport.loader
             .add('spineModel', spineModelUrl, { crossOrigin: true })
             .load(function (loader, res) {
+                console.log("Modelo cargado para exportación");
                 let exportChar = new PIXI.spine.Spine(res.spineModel.spineData);
 
-                const modelWidth = exportChar.width;
-                const modelHeight = exportChar.height;
-                const scaleX = exportWidth / modelWidth;
-                const scaleY = exportHeight / modelHeight;
-                const scale = Math.min(scaleX, scaleY);
+                resizeModelForExport(exportChar, exportWidth, exportHeight);
 
-                exportChar.scale.set(scale);
-
-                const offsetX = (exportWidth - modelWidth * scale) / 2;
-                const offsetY = (exportHeight - modelHeight * scale) / 2;
-
-                exportChar.x = offsetX + (exportChar.width - 950);
-                exportChar.y = offsetY + (exportChar.height - 100);
-
-                exportChar.state.setAnimation(0, 'Idle_01', true);
+                exportChar.state.setAnimation(0, exportAnimation, true);
 
                 appExport.stage.addChild(exportChar);
 
                 let videoStream = exportCanvas.captureStream(FPS);
+                let audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                let destination = audioContext.createMediaStreamDestination();
                 let mediaRecorder = new MediaRecorder(videoStream, { mimeType: exportFormat, videoBitsPerSecond: exportBitrate });
 
                 let chunks = [];
@@ -426,6 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
 
                 mediaRecorder.onstop = function (e) {
+                    console.log("Grabación detenida");
                     let blob = new Blob(chunks, { type: exportFormat });
                     chunks = [];
                     let videoURL = URL.createObjectURL(blob);
@@ -433,15 +429,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.getElementById('exportResult').appendChild(exportVideo);
                 };
 
-                let animLength = exportDuration ? exportDuration : 0;
-                if (!exportDuration) {
-                    for (var i in spineModel.spineData.animations) {
-                        if (spineModel.spineData.animations[i].name == 'Idle_01') {
-                            animLength = spineModel.spineData.animations[i].duration;
-                            break;
-                        }
+                let animLength = 0;
+                for (var i in spineModel.spineData.animations) {
+                    if (spineModel.spineData.animations[i].name == exportAnimation) {
+                        animLength = spineModel.spineData.animations[i].duration;
+                        break;
                     }
                 }
+
+                let audioFiles = animationAudioMap[exportAnimation];
+                if (audioFiles && audioFiles.length > 0) {
+                    let audios = audioFiles.map(file => new Audio(`./audio/${modelAudioName}_${file}`));
+                    playAndCaptureAudiosSequentially(audios, audioContext, destination, videoStream);
+                }
+
+                console.log("Iniciando grabación por", animLength, "segundos");
 
                 mediaRecorder.start();
                 setTimeout(function () {
@@ -449,13 +451,82 @@ document.addEventListener('DOMContentLoaded', () => {
                     appExport.stage.children.pop();
                     appExport.loader.resources = {};
                     exportCanvas.remove();
+                    console.log("Exportación completa");
                 }, animLength * 1000);
             });
+    }
+
+    function resizeModelForExport(model, canvasWidth, canvasHeight) {
+        const modelWidth = model.width;
+        const modelHeight = model.height;
+
+        const scale = canvasWidth / modelWidth;
+
+        model.scale.set(scale);
+        model.x = (canvasWidth - modelWidth * scale) + 1260;
+        model.y = canvasHeight - 100;
+    }
+
+    function populateAnimationSelect() {
+        const animationSelect = document.getElementById('exportAnimation');
+        animationSelect.innerHTML = '';
+
+        if (spineModel && spineModel.spineData && spineModel.spineData.animations) {
+            spineModel.spineData.animations.forEach(animation => {
+                const option = document.createElement('option');
+                option.value = animation.name;
+                option.text = animation.name;
+                animationSelect.appendChild(option);
+            });
+        }
+    }
+
+    function playAndCaptureAudiosSequentially(audios, audioContext, destination, videoStream) {
+        if (audios.length === 0) return;
+
+        const [firstAudio, ...rest] = audios;
+        const source = audioContext.createMediaElementSource(firstAudio);
+        source.connect(destination);
+        destination.stream.getAudioTracks().forEach(track => videoStream.addTrack(track));
+
+        firstAudio.play().catch(() => {
+            if (rest.length > 0) {
+                playAndCaptureAudiosSequentially(rest, audioContext, destination, videoStream);
+            }
+        });
+
+        firstAudio.addEventListener('ended', () => {
+            if (rest.length > 0) {
+                setTimeout(() => {
+                    playAndCaptureAudiosSequentially(rest, audioContext, destination, videoStream);
+                }, 1000);
+            }
+        });
     }
 
     document.getElementById('exportButton').addEventListener('click', () => exportAnimationAsVideo());
 
     document.getElementById('loopCheckbox').addEventListener('change', (event) => {
         loopAnimation = event.target.checked;
+    });
+
+    document.getElementById('scaleSlider').addEventListener('input', (event) => {
+        const scale = parseFloat(event.target.value);
+        if (spineModel) {
+            spineModel.scale.set(scale);
+            resizeModel(spineModel);
+        }
+    });
+
+    document.getElementById('toggleSidebars').addEventListener('click', () => {
+        const sidebarIzquierda = document.getElementById('sidebarIzquierda');
+        const sidebarDerecha = document.getElementById('sidebarDerecha');
+        if (sidebarIzquierda.style.display === 'none' && sidebarDerecha.style.display === 'none') {
+            sidebarIzquierda.style.display = 'block';
+            sidebarDerecha.style.display = 'block';
+        } else {
+            sidebarIzquierda.style.display = 'none';
+            sidebarDerecha.style.display = 'none';
+        }
     });
 });

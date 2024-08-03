@@ -9,50 +9,43 @@
         body {
             background: gray;
             margin: 0;
-            display: flex;
             height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
-        .sidebar {
+        .sidebar, .right-sidebar {
             width: 250px;
             background: #333;
             color: white;
             overflow-y: auto;
             height: 100%;
-            flex-shrink: 0;
+            position: absolute;
+            z-index: 2;
         }
-        .sidebar ul {
+        .sidebar {
+            left: 0;
+        }
+        .right-sidebar {
+            right: 0;
+        }
+        .sidebar ul, .right-sidebar ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
-        .sidebar ul li {
+        .sidebar ul li, .right-sidebar ul li {
             padding: 10px;
             cursor: pointer;
-            color: #000000;
+            color: black;
         }
-        .sidebar ul li:hover {
+        .sidebar ul li:hover, .right-sidebar ul li:hover {
             background: #555;
             color: white;
         }
         .sidebar ul li.active {
-            background: #000000;
-            color: #ffffff;
-        }
-        .content {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            height: 100%;
-        }
-        #stage {
-            flex-grow: 1;
-            background: white;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: #555;
+            color: white;
         }
         .right-sidebar {
             width: 250px;
@@ -66,11 +59,19 @@
         .right-sidebar h5, .right-sidebar label, .right-sidebar button {
             color: white;
         }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        #stage {
+            width: 100%;
+            height: 100%;
+        }
         .animation-buttons {
             margin-top: 20px;
-        }
-        #scaleSlider {
-            width: 100%;
         }
         .scrollable-container {
             max-height: 400px;
@@ -87,7 +88,7 @@
             margin-top: 10px;
         }
         .dialog-box {
-            position: absolute; /* Cambia de absolute a fixed para que esté siempre en la misma posición relativa a la ventana del navegador */
+            position: absolute;
             top: 10%;
             left: 50%;
             transform: translateX(-50%);
@@ -96,56 +97,64 @@
             padding: 10px 20px;
             border-radius: 5px;
             font-size: 1.2em;
-            z-index: 9999; /* Asegúrate de que este valor sea alto para que esté encima de otros elementos */
-            pointer-events: none; /* Esto asegura que no interfiera con la interacción del usuario con otros elementos */
+            z-index: 9999;
+            pointer-events: none;
         }
-
-
+        #toggleSidebars {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+        }
     </style>
 </head>
 <body>
-<div class="sidebar">
+<button id="toggleSidebars" class="btn btn-secondary">Toggle Sidebars</button>
+<div id="sidebarIzquierda" class="sidebar">
     <div class="d-flex justify-content-center">
         <h2 id="modelHeader">Modelos</h2>
     </div>
     <ul id="modelList" class="list-group"></ul>
 </div>
 <div class="content">
-
     <canvas id="stage"></canvas>
 </div>
-<div class="right-sidebar d-flex flex-column">
-    <h5 id="skinHeader">Seleccionar Skin</h5>
-    <select id="skinSelect" class="form-select">
-        <option value="">Selecciona una skin</option>
-    </select>
-    <div class="animation-buttons">
-        <h5 id="animationHeader">Animaciones</h5>
-        <div id="animationButtonsContainer" class="scrollable-container">
-            <div id="animationButtons"></div>
-        </div>
-    </div>
-    <label for="scaleSlider" id="scaleLabel">Escalar Modelo</label>
-    <input type="range" id="scaleSlider" min="0.1" max="2" step="0.1" value="1">
-    <button id="openExportModal" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exportModal">Exportar Animación</button>
-    <div class="form-check mt-3">
-        <input class="form-check-input" type="checkbox" id="loopCheckbox">
-        <label class="form-check-label" for="loopCheckbox">Loop Animación</label>
-    </div>
-    <div class="language-selector mt-3">
-        <label for="languageSelect" id="languageLabel">Idioma:</label>
-        <select id="languageSelect" class="form-select">
-            <option value="es">Español</option>
-            <option value="en">English</option>
+<div id="sidebarDerecha" class="right-sidebar">
+    <div class="d-flex flex-column" style="height: 100%;">
+        <h5 id="skinHeader">Seleccionar Skin</h5>
+        <select id="skinSelect" class="form-select">
+            <option value="">Selecciona una skin</option>
         </select>
-    </div>
-    <div class="mt-auto">
-        <h4>Honkai Gakuen 2 Live2D/Spine</h4>
-        <div class="d-flex justify-content-center">
-            <a href="https://rafamr14.github.io/index.html"><img src="./img/ggzicon.webp" alt="Honkai Gakuen 2 Live2D/Spine" style="width: 64px"></a>
+        <div class="animation-buttons">
+            <h5 id="animationHeader">Animaciones</h5>
+            <div id="animationButtonsContainer" class="scrollable-container">
+                <div id="animationButtons"></div>
+            </div>
+        </div>
+        <label for="scaleSlider" id="scaleLabel">Escalar Modelo</label>
+        <input type="range" id="scaleSlider" min="0.1" max="2" step="0.1" value="1">
+        <button id="openExportModal" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exportModal">Exportar Animación</button>
+        <div class="form-check mt-3">
+            <input class="form-check-input" type="checkbox" id="loopCheckbox">
+            <label class="form-check-label" for="loopCheckbox">Loop Animación</label>
+        </div>
+        <div class="language-selector mt-3">
+            <label for="languageSelect" id="languageLabel">Idioma:</label>
+            <select id="languageSelect" class="form-select">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <div id="links" class="mt-auto">
+            <h4>Honkai Gakuen 2 Live2D/Spine</h4>
+            <div class="d-flex justify-content-center">
+                <a href="https://rafamr14.github.io/index.html"><img src="./img/ggzicon.webp" alt="Honkai Gakuen 2 Live2D/Spine" style="width: 64px"></a>
+            </div>
         </div>
     </div>
 </div>
+
 
 <div class="modal fade" id="exportModal" tabindex="-1" aria-labelledby="exportModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -169,8 +178,9 @@
                     <input type="number" id="exportBitrate" class="form-control" placeholder="5">
                 </div>
                 <div class="mb-3">
-                    <label for="exportDuration" class="form-label">Duración (segundos):</label>
-                    <input type="number" id="exportDuration" class="form-control" placeholder="5">
+                    <label for="exportAnimation" class="form-label">Animación:</label>
+                    <select id="exportAnimation" class="form-select">
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label for="exportFormat" class="form-label">Formato:</label>
@@ -187,10 +197,13 @@
     </div>
 </div>
 
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/pixi.js@6.0.4/dist/browser/pixi.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/pixi-spine@3.1.0/dist/pixi-spine.umd.min.js"></script>
+<script src="./js/pixi.js"></script>
+<script src="./js/pixi-spine.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>
