@@ -1583,7 +1583,8 @@
     },
     {
         "name": "Mashiro_swimsuit_home",
-        "url": "SpineBA/Mashiro_swimsuit_home.skel"
+        "url": "SpineBA/Mashiro_swimsuit_home.skel",
+        "Audio": "CH0061"
     },
     {
         "name": "mashiro_swimsuit_spr",

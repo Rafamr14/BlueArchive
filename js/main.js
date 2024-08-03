@@ -64,25 +64,36 @@ document.addEventListener('DOMContentLoaded', () => {
     let originalModelName = null;
     let modelAudioName = null;
 
-    fetch('./data/models.json')
-        .then(response => response.json())
-        .then(models => {
+    Promise.all([
+        fetch('./data/models.json').then(response => response.json()),
+        fetch('./data/PathNames.json').then(response => response.json())
+    ])
+        .then(([models, nameMappings]) => {
             const modelList = document.getElementById('modelList');
             modelList.innerHTML = '';
 
-            const modelItems = models.map(model => ({
-                element: createListItem(model.name, model.url),
-                originalName: model.name,
-                newName: model.name,
-                audioName: model.Audio || model.name.split('_')[0] // Get the audio name
-            }));
+            const modelItems = models.map(model => {
+                const mapping = nameMappings.find(m => model.name.includes(m.DevName));
+                const newName = mapping ? model.name.replace(mapping.DevName, mapping.PathName) : model.name;
+                const audioName = model.Audio || (mapping ? mapping.Audio || mapping.DevName : model.name.split('_')[0]);
 
+                return {
+                    element: createListItem(newName, model.url, audioName),
+                    originalName: model.name,
+                    newName: newName,
+                    audioName: audioName
+                };
+            });
+
+            // Ordenar los elementos por el nuevo nombre
             modelItems.sort((a, b) => a.newName.localeCompare(b.newName));
+
+            // Añadir los elementos ordenados al DOM
             modelItems.forEach(item => modelList.appendChild(item.element));
         })
-        .catch(error => console.error('Error fetching models:', error));
+        .catch(error => console.error('Error fetching data:', error));
 
-    function createListItem(name, url) {
+    function createListItem(name, url, audioName) {
         const listItem = document.createElement('li');
         listItem.classList.add('list-group-item');
         listItem.textContent = name;
@@ -92,17 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             listItem.classList.add('active');
             currentSelectedItem = listItem;
-            currentModel = listItem.textContent;
-            originalModelName = name;
-
-            fetch('./data/models.json')
-                .then(response => response.json())
-                .then(models => {
-                    const model = models.find(m => m.name === originalModelName);
-                    modelAudioName = model ? model.Audio || originalModelName.split('_')[0] : originalModelName.split('_')[0];
-                    loadModel(url);
-                })
-                .catch(error => console.error('Error fetching models:', error));
+            currentModel = listItem.textContent; // Store the current model name
+            originalModelName = name; // Store the original model name
+            modelAudioName = audioName; // Store the model audio name
+            loadModel(url);
         });
         return listItem;
     }
@@ -160,7 +164,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     loadAnimationButtons(spineData.animations);
                     loadSkinOptions(spineData.skins);
 
-                    playInitialAudio(modelAudioName || originalModelName);
+                    // Reproducir audio automáticamente al cargar el modelo
+                    setTimeout(() => playInitialAudio(modelAudioName || originalModelName), 1000); // 1000 ms = 1 segundo de retraso
                 }
             });
     }
@@ -200,14 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
             lastPosition = newPosition;
         }
     }
-
-    document.getElementById('scaleSlider').addEventListener('input', (event) => {
-        const scale = parseFloat(event.target.value);
-        if (spineModel) {
-            spineModel.scale.set(scale);
-            resizeModel(spineModel);
-        }
-    });
 
     const animationAudioMap = {
         "Talk_01_A": [
@@ -285,7 +282,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function playInitialAudio(modelName) {
-        const baseName = modelName.split('_')[0];
         const audioFiles = [
             `./audio/${modelName}_MemorialLobby_0.ogg`,
             `./audio/${modelName}_MemorialLobby_0_1.ogg`,
@@ -295,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const audios = audioFiles.map(file => new Audio(file));
         setTimeout(() => {
             playAudiosSequentially(audios);
-        }, 3000);
+        }, 1000); // 1000 ms = 1 segundo de retraso
     }
 
     function playAudiosSequentially(audios) {
@@ -313,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (rest.length > 0) {
                 setTimeout(() => {
                     playAudiosSequentially(rest);
-                }, 1000);
+                }, 1000); // 1000 ms = 1 segundo de retraso
             }
         });
     }
