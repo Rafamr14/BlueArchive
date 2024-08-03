@@ -1,7 +1,8 @@
 [
     {
         "name": "Airi_home",
-        "url": "SpineBA/Airi_home.skel"
+        "url": "SpineBA/Airi_home.skel",
+        "Audio": "Airi"
     },
     {
         "name": "airi_spr",
@@ -9,7 +10,8 @@
     },
     {
         "name": "Akane_home",
-        "url": "SpineBA/Akane_home.skel"
+        "url": "SpineBA/Akane_home.skel",
+        "Audio": "Akane"
     },
     {
         "name": "akane_spr",
@@ -21,7 +23,8 @@
     },
     {
         "name": "akari_home",
-        "url": "SpineBA/akari_home.skel"
+        "url": "SpineBA/akari_home.skel",
+        "Audio": "Akari"
     },
     {
         "name": "akari_scene",
@@ -33,7 +36,8 @@
     },
     {
         "name": "Ako_home",
-        "url": "SpineBA/Ako_home.skel"
+        "url": "SpineBA/Ako_home.skel",
+        "Audio": "Ako"
     },
     {
         "name": "ako_spr",
@@ -41,7 +45,8 @@
     },
     {
         "name": "Aris_home",
-        "url": "SpineBA/Aris_home.skel"
+        "url": "SpineBA/Aris_home.skel",
+        "Audio": "Aris"
     },
     {
         "name": "aris_noweapon_spr",
@@ -73,11 +78,13 @@
     },
     {
         "name": "Aru_home",
-        "url": "SpineBA/Aru_home.skel"
+        "url": "SpineBA/Aru_home.skel",
+        "Audio": "Aru"
     },
     {
         "name": "Aru_newyear_home",
-        "url": "SpineBA/Aru_newyear_home.skel"
+        "url": "SpineBA/Aru_newyear_home.skel",
+        "Audio": "AruNewyear"
     },
     {
         "name": "aru_newyear_spr",
@@ -93,7 +100,8 @@
     },
     {
         "name": "Asuna_home",
-        "url": "SpineBA/Asuna_home.skel"
+        "url": "SpineBA/Asuna_home.skel",
+        "Audio": "Asuna"
     },
     {
         "name": "asuna_spr",
@@ -101,7 +109,8 @@
     },
     {
         "name": "Atsuko_home",
-        "url": "SpineBA/Atsuko_home.skel"
+        "url": "SpineBA/Atsuko_home.skel",
+        "Audio": "Atsuko"
     },
     {
         "name": "atsuko_spr",
@@ -121,7 +130,8 @@
     },
     {
         "name": "Ayane_home",
-        "url": "SpineBA/Ayane_home.skel"
+        "url": "SpineBA/Ayane_home.skel",
+        "Audio": "Ayane"
     },
     {
         "name": "ayane_robber_spr",
@@ -133,7 +143,8 @@
     },
     {
         "name": "Azusa_home",
-        "url": "SpineBA/Azusa_home.skel"
+        "url": "SpineBA/Azusa_home.skel",
+        "Audio": "Azusa"
     },
     {
         "name": "azusa_spr",
@@ -141,7 +152,8 @@
     },
     {
         "name": "Azusa_swimsuit_home",
-        "url": "SpineBA/Azusa_swimsuit_home.skel"
+        "url": "SpineBA/Azusa_swimsuit_home.skel",
+        "Audio": "AzusaSwimsuit"
     },
     {
         "name": "azusa_swimsuit_spr",
@@ -1369,7 +1381,8 @@
     },
     {
         "name": "Hoshino_swimsuit_home",
-        "url": "SpineBA/Hoshino_swimsuit_home.skel"
+        "url": "SpineBA/Hoshino_swimsuit_home.skel",
+        "Audio": "HoshinoSwimsuit"
     },
     {
         "name": "hoshino_swimsuit_spr",
@@ -1401,7 +1414,8 @@
     },
     {
         "name": "Izumi_swimsuit_home",
-        "url": "SpineBA/Izumi_swimsuit_home.skel"
+        "url": "SpineBA/Izumi_swimsuit_home.skel",
+        "Audio": "IzumiSwimsuit"
     },
     {
         "name": "izumi_swimsuit_spr",
@@ -1653,7 +1667,8 @@
     },
     {
         "name": "mutsuki_newyear_home",
-        "url": "SpineBA/mutsuki_newyear_home.skel"
+        "url": "SpineBA/mutsuki_newyear_home.skel",
+        "Audio": "MutsukiNewyear"
     },
     {
         "name": "mutsuki_newyear_spr",
@@ -2493,7 +2508,8 @@
     },
     {
         "name": "Saya_casual_home",
-        "url": "SpineBA/Saya_casual_home.skel"
+        "url": "SpineBA/Saya_casual_home.skel",
+        "Audio": "SayaCasual"
     },
     {
         "name": "saya_casual_spr",
@@ -2533,7 +2549,8 @@
     },
     {
         "name": "Serika_Newyear_home",
-        "url": "SpineBA/Serika_Newyear_home.skel"
+        "url": "SpineBA/Serika_Newyear_home.skel",
+        "Audio": "SerikaNewyear"
     },
     {
         "name": "serika_newyear_spr",
@@ -2597,7 +2614,8 @@
     },
     {
         "name": "Shiroko_ridingsuit_home",
-        "url": "SpineBA/Shiroko_ridingsuit_home.skel"
+        "url": "SpineBA/Shiroko_ridingsuit_home.skel",
+        "Audio": "ShirokoRidingSuit"
     },
     {
         "name": "shiroko_ridingsuit_spr",
