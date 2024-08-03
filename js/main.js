@@ -369,7 +369,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const exportHeight = parseInt(document.getElementById('exportHeight').value) || app.renderer.height;
         const exportBitrate = parseInt(document.getElementById('exportBitrate').value) * 1000000 || 5000000;
         const exportAnimation = document.getElementById('exportAnimation').value;
-        const exportFormat = document.getElementById('exportFormat').value || 'video/webm';
+        let exportFormat = document.getElementById('exportFormat').value || 'video/webm';
+        
+        if (!MediaRecorder.isTypeSupported(exportFormat)) {
+            alert(`El formato ${exportFormat} no es soportado. Cambiando a video/webm.`);
+            exportFormat = 'video/webm';
+        }
 
         console.log("Parámetros de exportación:", { exportWidth, exportHeight, exportBitrate, exportAnimation, exportFormat });
 
