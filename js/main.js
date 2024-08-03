@@ -289,9 +289,22 @@ document.addEventListener('DOMContentLoaded', () => {
             `./audio/${modelName}_MemorialLobby_0_3.ogg`
         ];
         const audios = audioFiles.map(file => new Audio(file));
+
+        // Configurar retrasos personalizados para ciertos modelos
+        let delay = 2000; // Retraso predeterminado de 2 segundos
+
+        if (modelName === "CH0064") {
+            delay = 5000; // 3 segundos de retraso para ModeloA
+        } else if (modelName === "Azusa_home") {
+            delay = 2000; // 1 segundo de retraso para ModeloB
+        } else if (modelName === "Aru_home") {
+            delay = 2000; // 1 segundo de retraso para ModeloB
+        }
+        // Agrega más condiciones según sea necesario
+
         setTimeout(() => {
             playAudiosSequentially(audios);
-        }, 1000); // 1000 ms = 1 segundo de retraso
+        }, delay);
     }
 
     function playAudiosSequentially(audios) {
